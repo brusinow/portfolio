@@ -20,15 +20,18 @@ h2 {
  }
 
 .top-bar {
+  position: fixed;
       padding: 1.7rem;
        z-index: 4000; 
-    position: fixed;
     width: 100%; }
   .top-bar ul {
+    background: transparent;
      }
    
       .top-bar ul li a {
+        background-color: rgba(0, 0, 0, 0);
         color: #fff; }
+
 
 .menu-text {
   color: #fff; }
@@ -96,6 +99,7 @@ background-color: white;
 
 
 a.main-link {
+  background-color: rgba(0, 0, 0, 0);
   border-bottom: 2px solid rgba(0, 0, 0, 0);
   font-size: 22px;
   font-weight: bold;
