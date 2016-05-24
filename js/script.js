@@ -108,17 +108,24 @@ $(function(){
 
 
 $('.project-btn').click(function(){
+  if ($(this).hasClass('active')){
+  return true
+  }
   $('.project-btn, .svg-text').removeClass("active");
-  $('#project-intro-box, .projects-text, .desktop-img, .mobile-img, .big-mobile-img, #big-iphone-container, #screensaver').fadeOut(200);
+   $('.projects-text').slideUp(200);
+  $('#project-intro-box, .desktop-img, .mobile-img, .big-mobile-img, #big-iphone-container, #screensaver').fadeOut(200);
   $(this).addClass("active");
   jQuery(this).find(".svg-text").addClass("active");
   if ($("#homeventory-btn").hasClass('active')){
-    $("#iphone-container, #imac-container, #homeventory-desktop, #homeventory-mobile, #homeventory-text-body").delay(300).fadeIn(800);  
+    $("#homeventory-text-body").delay(300).slideDown(300);  
+    $("#iphone-container, #imac-container, #homeventory-desktop, #homeventory-mobile").delay(300).fadeIn(800);  
   } else if ($("#connect-four-btn").hasClass('active')){
-      $("#iphone-container, #imac-container, #connect-four-desktop, #connect-four-mobile, #connect-four-text-body").delay(300).fadeIn(800);  
+    $("#connect-four-text-body").delay(300).slideDown(300); 
+      $("#iphone-container, #imac-container, #connect-four-desktop, #connect-four-mobile").delay(300).fadeIn(800);  
     } else if ($("#road-warrior-btn").hasClass('active')){
     $('#imac-container, #iphone-container').fadeOut(300);
-    $("#big-iphone-container, #road-warrior-mobile, #road-warrior-text-body").delay(300).fadeIn(800);
+    $("#road-warrior-text-body").delay(300).slideDown(300); 
+    $("#big-iphone-container, #road-warrior-mobile").delay(300).fadeIn(800);
     }
 });
 

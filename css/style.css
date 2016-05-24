@@ -20,7 +20,7 @@ h2 {
  }
 
 .top-bar {
-  position: fixed;
+      position: fixed;
       padding: 1.7rem;
        z-index: 4000; 
     width: 100%; }
@@ -285,12 +285,15 @@ a.active {
 }
 
 .projects-text {
-  margin-top: 20px;
+  margin-top: 0px;
   padding: 18px;
+  width: 100%;
   background-color: white;
-  border-radius: 2px;
+  border-radius: 0 0 2px 2px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+
+
 
 #imac {
   position: absolute;
@@ -316,9 +319,30 @@ a.active {
           transition-duration: .3s;
 }
 
+.button-group {
+  position: relative;
+    top: 16px;
+}
+
 .button-group .button:not(:last-child) {
     margin-right: 0px;
+
 }
+
+.button {
+  width: 33.3333333%;
+}
+
+.svg {
+  width:90%;
+}
+
+.button.secondary {
+    background-color: #D4D4D4;
+    color: #fefefe; }
+    .button.secondary:hover, .button.secondary:focus {
+      background-color: #ACACAC;
+      color: #fefefe; }
 
 .project-btn-text:visited {
     fill: #666666; }
@@ -326,13 +350,7 @@ a.active {
      fill: #fefefe;
     text-decoration: none;
     outline: none; }
-.project-btn-text:active, .project-btn-text.active, .project-btn-text.is-active {
-    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.3);
-    text-decoration: none;
-    fill: #d4d4d4;
-    -webkit-transition-duration: 0s;
-            transition-duration: 0s;
-   }
+
 
 .project-btn-text:active, .project-btn-text.active, .project-btn-text.is-active {
     text-shadow: 0 1px 0 rgba(255, 255, 255, 0.3);
@@ -340,23 +358,16 @@ a.active {
     background-color: #eeeeee;
     border-color: #cfcfcf;
     color: #d4d4d4;
-    fill: #d4d4d4;
+    fill: #8e8e8e;
     -webkit-transition-duration: 0s;
             transition-duration: 0s;
     -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2);
             box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2); }
 
 
-#road-warrior-text-body {
+#road-warrior-text-body, #homeventory-text-body, #connect-four-text-body {
   display: none;
-}
-
-#homeventory-text-body {
-  display: none;
-}
-
-#connect-four-text-body {
-  display: none;
+  height: 350px;
 }
 
 
@@ -484,8 +495,19 @@ a.active {
   margin: 2px;
 }
 
+.github-icon {
+  background: url("../img/icons.github.svg") no-repeat contain;
+  display: inline-block;
+  height: 12px;
+  width: 12px;
+  margin-right: 3px;
+}
+
 .project-link {
+  display: inline-block;
   width: 30%;
+  padding: 10px;
+  line-height: 16px;
 }
 
 .project-links-group {
@@ -512,6 +534,17 @@ a.active {
 }
 }
 
+@media (min-width: 831px) {
+#homeventory-text-body, #road-warrior-text-body, #connect-four-text-body {
+  height: 325px;
+}
+}
+
+@media (min-width: 975px) {
+#homeventory-text-body, #road-warrior-text-body, #connect-four-text-body {
+  height: 300px;
+}
+}
 
 @media screen and ( min-height: 765px ){
   #imac-container, .desktop-img {
