@@ -1,0 +1,557 @@
+
+body {
+  background: url("../img/classy_fabric.png");
+  position: relative;
+}
+
+p {
+  text-align: left;
+  line-height: 1.2;
+  font-family: 'Cardo', serif;
+}
+
+h2 {
+  margin: 0 auto;
+}
+
+.title-bar {
+ /* background: rgba(0, 0, 0, 0);*/
+  padding: 0.9rem;
+ }
+
+.top-bar {
+      padding: 1.7rem;
+       z-index: 4000; 
+    position: fixed;
+    width: 100%; }
+  .top-bar ul {
+     }
+   
+      .top-bar ul li a {
+        color: #fff; }
+
+.menu-text {
+  color: #fff; }
+  @media only screen and (max-width: 40em) {
+    .menu-text {
+      display: none !important; } }
+
+@media only screen and (min-width: 40em) {
+  .top-bar .menu:last-child {
+    border-left: 1px solid #4e4e4e; } }
+
+  .top-bar .menu:first-child {
+    border-left: none; }
+
+  .top-bar .menu li:not(:last-child) {
+     }
+
+.dropdown.menu .submenu {
+  border: none; }
+
+.dropdown.menu .is-dropdown-submenu-parent.is-right-arrow > a::after {
+  border-color: #fff transparent transparent; }
+
+.is-drilldown-submenu-parent > a::after {
+  border-color: transparent transparent transparent #fff; }
+
+.js-drilldown-back::before {
+  border-color: transparent #fff transparent transparent; }
+
+
+#logo {
+  height: 35px;
+}
+
+#welcome {
+  width:100%;
+  z-index: -1;
+  position: relative;
+  box-shadow: 0 8px 30px 0 rgba(0, 0, 0, 0.2), 0 10px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+a.anchor {
+    display: block;
+    position: relative;
+    top: -100px;
+    visibility: hidden;
+}
+
+.content-section{
+position: relative;
+box-shadow: 0 8px 30px 0 rgba(0, 0, 0, 0.2), 0 10px 20px 0 rgba(0, 0, 0, 0.19);
+padding: 15px;
+background-color: white;
+}
+
+.not-scrolled {
+  transition: background-color 0.5s ease;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.scrolled {
+  transition: background-color 0.5s ease;
+  background-color: rgba(0, 0, 0, .9);
+}
+
+
+a.main-link {
+  border-bottom: 2px solid rgba(0, 0, 0, 0);
+  font-size: 22px;
+  font-weight: bold;
+  font-family: 'Oswald', sans-serif;
+  text-shadow: 2px 2px 4px #222222;
+    -o-transition:.5s;
+  -ms-transition:.5s;
+  -moz-transition:.5s;
+  -webkit-transition:.5s;
+  /* ...and now for the proper property */
+  transition:.5s;
+}
+
+a.main-link:hover {
+  color: rgba(255, 255, 255, .7);
+  text-shadow: 2px 2px 7px #222222;
+  border-bottom: 2px solid rgba(255, 255, 255, .5);
+}
+
+a.active {
+  border-bottom: 2px solid white !important;
+}
+
+.typebox {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-size: 36px;
+  font-family: "Arvo";
+}
+
+#phrase-1 {
+  top: 45%;
+  display: none;
+}
+
+#phrase-2 {
+  top: 51%;
+  display: none;
+}
+
+
+  .top-bar .top-bar-center {
+    width: 100%; }
+  @media screen and (min-width: 40em) {
+    .top-bar .top-bar-center {
+      width: auto; } }
+  @media screen and (max-width: 63.9375em) {
+    .top-bar.stacked-for-medium .top-bar-center {
+      width: 100%; } }
+  @media screen and (max-width: 74.9375em) {
+    .top-bar.stacked-for-large .top-bar-center {
+      width: 100%; } }
+
+  .top-bar-right {
+    float: none;
+}
+
+
+
+
+#namebox {
+  display:none;
+  position: absolute;
+  width: 100%;
+  top: 33%;
+  text-align: center;
+  color: white;
+  font-size: 72px;
+  font-family: 'Bowlby One SC', sans-serif;
+  text-shadow: 2px 2px 4px #222222;
+}
+
+.menu {
+  display:none;
+  width: 704px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.menu > li > a {
+    display: block;
+    padding: 0.7rem 2rem;
+    line-height: 1;
+}
+
+.spacer {
+  width: 100%;
+  height: 200px;
+  background-color: transparent;
+}
+
+
+
+#about-section {
+  z-index: 95;
+  position: relative;
+  background: url("../img/cork-board.jpg");
+  background-size: cover;
+  background-repeat: none;
+}
+
+.center-text {
+  text-align: center;
+}
+
+.header-row {
+  text-align: center;
+}
+
+
+.header-panel {
+  display: inline-block;
+  background-color: white;
+  border-radius: 2px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin: 10px auto 15px auto;
+  padding: 0 14px;
+}
+
+.about-img {
+ 
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 10px;
+}
+
+.about-img img {
+  width: 100%;
+}
+
+.bottom-row-about-img {
+  
+}
+
+#bottom-1 {
+
+}
+
+#bottom-2 {
+ 
+}
+
+#about-text {
+  font-size: 16px;
+  width: 46%;
+  margin-left: 2%;
+  position: relative;
+  background-color: white;
+  border-radius: 2px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 22px;
+}
+
+.section-header {
+  font-family: 'Bowlby One SC', sans-serif;
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.19);
+}
+
+.section-header-invert {
+  color: white;
+  -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+   -webkit-text-stroke-width: 1px;
+   -webkit-text-stroke-color: black;
+  font-family: 'Bowlby One SC', sans-serif;
+  text-shadow: 2px 4px 2px rgba(0, 0, 0, 0.49);
+
+}
+
+#projects-section {
+  background: url("../img/table.jpg") no-repeat center bottom;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+}
+
+#projects-header {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.projects-text {
+  margin-top: 20px;
+  padding: 18px;
+  background-color: white;
+  border-radius: 2px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#imac {
+  position: absolute;
+  bottom: -480px;
+  left: 0px;
+}
+
+
+
+#demo-wrapper {
+  position: relative;
+}
+
+
+
+
+.project-btn-text {
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.29);
+  fill: #222222; 
+  -webkit-transition-property: all;
+          transition-property: all;
+  -webkit-transition-duration: .3s;
+          transition-duration: .3s;
+}
+
+.button-group .button:not(:last-child) {
+    margin-right: 0px;
+}
+
+.project-btn-text:visited {
+    fill: #666666; }
+ .project-btn-text:hover, .project-btn-text:focus {
+     fill: #fefefe;
+    text-decoration: none;
+    outline: none; }
+.project-btn-text:active, .project-btn-text.active, .project-btn-text.is-active {
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.3);
+    text-decoration: none;
+    fill: #d4d4d4;
+    -webkit-transition-duration: 0s;
+            transition-duration: 0s;
+   }
+
+.project-btn-text:active, .project-btn-text.active, .project-btn-text.is-active {
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.3);
+    text-decoration: none;
+    background-color: #eeeeee;
+    border-color: #cfcfcf;
+    color: #d4d4d4;
+    fill: #d4d4d4;
+    -webkit-transition-duration: 0s;
+            transition-duration: 0s;
+    -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2);
+            box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2); }
+
+
+#road-warrior-text-body {
+  display: none;
+}
+
+#homeventory-text-body {
+  display: none;
+}
+
+#connect-four-text-body {
+  display: none;
+}
+
+
+.desktop-img {
+  position: absolute;
+  bottom: -480px;
+  left: 0px;
+}
+
+.mobile-img {
+  width: 15%;
+  position: absolute;
+  bottom: -466px;
+  left: 92%;
+}
+
+.big-mobile-img {
+  width: 40%;
+  position: absolute;
+  bottom: -466px;
+  left: 30%;
+}
+
+#homeventory-desktop {
+  display: none;
+}
+
+#connect-four-desktop {
+  display: none;
+}
+
+#homeventory-mobile {
+  z-index: 15;
+  display: none;
+}
+
+#connect-four-mobile {
+  z-index: 16;
+  display: none;
+}
+
+#road-warrior-mobile {
+  z-index: 17;
+  display: none;
+}
+
+#iphone-lock-screen {
+  z-index: 18;
+}
+
+#screensaver {
+    position: absolute;
+    width: 90%;
+    max-width: 95%;
+    margin-top: 48%;
+    left: 28px;
+}
+
+
+#imac-container {
+  position: absolute;
+  bottom: -480px;
+  left: 0px;
+  background: url("../img/imac.png") no-repeat center bottom;
+  background-size: contain;
+}
+
+#iphone-container {
+  z-index: 5;
+  width: 15%;
+  position: absolute;
+  bottom: -466px;
+  left: 92%;
+  background: url("../img/iphone6.png") no-repeat center bottom;
+  background-size: contain;
+}
+
+#big-iphone-container {
+  display: none;
+  z-index: 5;
+  width: 40%;
+  position: absolute;
+  bottom: -466px;
+  left: 30%;
+  background: url("../img/iphone6.png") no-repeat center bottom;
+  background-size: contain;
+}
+
+.project-svg-header {
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.29);
+  margin:0 auto 15px auto;
+  display: block;
+}
+
+#project-intro-box {
+  position: relative;
+  width: 100%;
+}
+
+#arrow {
+  position: absolute;
+  top: 10px;
+  left: 40px;
+  width: 70px;
+}
+
+#intro-text {
+  font-size: 26px;
+  font-family: "Arvo";
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.19);
+  color: white;
+  position: absolute;
+  top: 122px;
+  left: 92px;
+}
+
+.tech-icon-header{
+  color: #666666;
+  font-size: 14px;
+  font-family: "Arvo";
+}
+
+.tech-icon {
+  width: 24px;
+  margin: 2px;
+}
+
+.project-link {
+  width: 30%;
+}
+
+.project-links-group {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.icon-in-btn {
+  width: 20px;
+  vertical-align: center;
+  padding-bottom: 4px;
+  padding-right: 3px;
+}
+
+@media (max-width: 1025px) {
+ #screensaver {
+  width: 86%;
+ }
+}
+
+@media (max-width: 975px) {
+ #about-text {
+  font-size: 14px;
+}
+}
+
+
+@media screen and ( min-height: 765px ){
+  #imac-container, .desktop-img {
+  bottom: -530px; 
+}
+  #iphone-container, #big-iphone-container, .mobile-img, .big-mobile-img {
+  bottom: -516px;
+}
+  }
+
+@media screen and ( max-height: 673px ){
+  #imac-container, .desktop-img {
+  bottom: -430px; 
+}
+  #iphone-container, #big-iphone-container, .mobile-img, .big-mobile-img {
+  bottom: -416px;
+}
+  }
+
+.arrowflash {
+  -moz-animation: arrowflash 1s ease-out;
+  -moz-animation-iteration-count: 1000;
+
+  -webkit-animation: arrowflash 1s ease-out;
+  -webkit-animation-iteration-count: 1000;
+
+  -ms-animation: arrowflash 1s ease-out;
+  -ms-animation-iteration-count: 1000;
+}
+
+@-webkit-keyframes arrowflash {
+    0% { opacity:1; }
+    50% { opacity:.2; }
+    100% { opacity:1; }
+}
+
+@-moz-keyframes arrowflash {
+    0% { opacity:1; }
+    50% { opacity:.2; }
+    100% { opacity:1; }
+}
+
+@-ms-keyframes arrowflash {
+     0% { opacity:1; }
+    50% { opacity:.2; }
+    100% { opacity:1; }
+}
