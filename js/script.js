@@ -8,7 +8,7 @@ $('.main-link').click(function(){
   $(this).addClass("active");
     $('html, body').animate({
         scrollTop: $( $(this).attr('href') ).offset().top
-    }, 700);
+    }, 800);
     return false;
 });
 
@@ -117,14 +117,14 @@ $('.project-btn').click(function(){
   $(this).addClass("active");
   jQuery(this).find(".svg-text").addClass("active");
   if ($("#homeventory-btn").hasClass('active')){
-    $("#homeventory-text-body").delay(300).slideDown(300);  
+    $("#homeventory-text-body").delay(300).slideDown(400);  
     $("#iphone-container, #imac-container, #homeventory-desktop, #homeventory-mobile").delay(300).fadeIn(800);  
   } else if ($("#connect-four-btn").hasClass('active')){
-    $("#connect-four-text-body").delay(300).slideDown(300); 
+    $("#connect-four-text-body").delay(300).slideDown(400); 
       $("#iphone-container, #imac-container, #connect-four-desktop, #connect-four-mobile").delay(300).fadeIn(800);  
     } else if ($("#road-warrior-btn").hasClass('active')){
     $('#imac-container, #iphone-container').fadeOut(300);
-    $("#road-warrior-text-body").delay(300).slideDown(300); 
+    $("#road-warrior-text-body").delay(300).slideDown(400); 
     $("#big-iphone-container, #road-warrior-mobile").delay(300).fadeIn(800);
     }
 });

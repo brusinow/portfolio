@@ -189,7 +189,7 @@ a.active {
 
 .spacer {
   width: 100%;
-  height: 200px;
+  height: 150px;
   background-color: transparent;
 }
 
@@ -232,17 +232,6 @@ a.active {
   width: 100%;
 }
 
-.bottom-row-about-img {
-  
-}
-
-#bottom-1 {
-
-}
-
-#bottom-2 {
- 
-}
 
 #about-text {
   font-size: 16px;
@@ -365,11 +354,24 @@ a.active {
             box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2); }
 
 
-#road-warrior-text-body, #homeventory-text-body, #connect-four-text-body {
+
+#connect-four-text-body {
+  display: none;
+  height: 330px;
+}
+
+
+
+#homeventory-text-body  {
   display: none;
   height: 350px;
 }
 
+
+#road-warrior-text-body {
+  display: none;
+  height: 370px;
+} 
 
 .desktop-img {
   position: absolute;
@@ -529,22 +531,46 @@ a.active {
 }
 
 @media (max-width: 975px) {
- #about-text {
+  #about-text {
   font-size: 14px;
-}
+  }
 }
 
 @media (min-width: 831px) {
-#homeventory-text-body, #road-warrior-text-body, #connect-four-text-body {
+  #homeventory-text-body {
   height: 325px;
-}
+  }
+
+  #road-warrior-text-body {
+  height: 345px;
+  }
+
+  #connect-four-text-body {
+  height: 305px;
+  }
 }
 
 @media (min-width: 975px) {
-#homeventory-text-body, #road-warrior-text-body, #connect-four-text-body {
+  #homeventory-text-body {
   height: 300px;
+  }
+
+  #road-warrior-text-body {
+  height: 320px;
+  }
+
+  #connect-four-text-body {
+  height: 280px;
+  }
 }
-}
+
+
+
+
+
+
+
+
 
 @media screen and ( min-height: 765px ){
   #imac-container, .desktop-img {
