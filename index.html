@@ -9,10 +9,12 @@
    
     <link rel="stylesheet" type="text/css"
           href="https://fonts.googleapis.com/css?family=Arvo">
-    <link href='https://fonts.googleapis.com/css?family=Oswald:700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
      <link href='https://fonts.googleapis.com/css?family=Cardo' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Bowlby+One+SC' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="./css/style.css">
+     <link rel="stylesheet" 
+      href="./css/foundation-icons/foundation-icons.css"/>    
+      <link rel="stylesheet" href="./css/style.css">
   </head>
   <body>
 
@@ -27,8 +29,8 @@
       <li><a class="main-link" href="#home">HOME</a></li>
       <li><a class="main-link" href="#about">ABOUT ME</a></li>
       <li><a class="main-link" href="#projects">PROJECTS</a></li>
-      <li><a class="main-link" href="#">CONTACT</a></li>
-      <li><a class="main-link" href="#">RESUME</a></li>
+      <li><a class="main-link" href="#contact">CONTACT</a></li>
+      <li><a class="main-link" href="#resume">RESUME</a></li>
     </ul>
   </div>
 </header>
@@ -60,7 +62,7 @@
       Hi, my name is Brent and I am a creative-minded, solutions-driven software developer with a passion for intuitive design and function. My previous experience as a full-time touring musician informs everything that I do: from my ability to adapt and adjust plans quickly to finding efficient, concise solutions for challenging problems. My work ethic is reflected in my work, whether I am collaborating with my team to execute thoughtful user experiences or working on my own web-based passion projects. 
     </p>
     <p>
-      For the past five years I got to experience the wild ride of performing 250+ days a year with soul-singer Allen Stone - performing on the late night TV circuit, headlining global tours and opening for artists ranging from Stevie Wonder to Macklemore to Dave Matthews Band. Music still plays an important role in my life, as well as the habits and skills I learned through it: maintaining a disciplined routine, developing an ability to deal with ambiguity, and working toward mastering my craft.   
+      For the past five years I got to experience the wild ride of performing 250+ days a year with soul singer Allen Stone - appearing on all the major late night TV shows, headlining global tours, and opening for artists ranging from Stevie Wonder to Macklemore to Dave Matthews Band. Music still plays an important role in my life, as well as the habits and skills I learned through it: maintaining a disciplined routine, developing an ability to deal with ambiguity, and working toward mastering my craft.   
     </p>
     <p style="margin-bottom: 0px;">
       Currently, I live in Ballard with my wife and our dog and cat. Together, we spend our spare time exploring our city, digging through record stores, and venturing out to Seattle’s trendy restaurants. 
@@ -91,7 +93,7 @@
   </div>
 </div>
 
-<div class="row">  
+<div style="height: 100%;" class="row">  
   <div id="desktop-preview" class="columns small-12 large-6 medium-6">
   
     <div id="demo-wrapper">
@@ -121,26 +123,16 @@
         </div> -->
    
   </div>
-  <div style="text-align: center; margin-top: 50px;" class="columns small-12 large-5 medium-5">
+  <div style="text-align: center;" class="dropdown-complete columns small-12 large-5 medium-5">
     <div style="width: 100%;" class="button-group even-3">
      <!--  <button type="button" class="project-btn button button-raised">Project 4</button> -->
-      <button id="road-warrior-btn" type="button" class="project-btn button secondary button-raised">
-       <svg class="svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="90.064px" height="22px" viewBox="0 0 82.064 15.984" enable-background="new 0 0 80.064 17.984" xml:space="preserve">
-          <rect fill="none" width="82.064" height="17.984"></rect>
-          <text class="svg-text project-btn-text" transform="matrix(1 0 0 1 0 13.9199)" font-family="'PunkRockShow-Regular'" font-size="17">road warrior</text>
-          </svg>
-
+      <button id="road-warrior-btn" type="button" class="project-btn button button-half-rounded button-raised">Road Warrior
       </button>
-      <button id="homeventory-btn" type="button" class="project-btn button secondary button-raised">
-       <svg class="svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100px" height="22px" viewBox="0 0 114 22" enable-background="new 0 0 149.612 23.256" xml:space="preserve">
-          <rect fill="none" width="115px" height="28"></rect>
-          <text id="homeventory-text" class="svg-text project-btn-text" transform="matrix(1 0 0 1 0 17.5547)"><tspan x="0" y="0" font-family="'CoveredByYourGrace'" font-size="22">HOME</tspan><tspan x="38.223" y="0" font-family="'ArchivoBlack-Regular'" font-size="18">ventory</tspan></text>
-        </svg>
+      <button id="homeventory-btn" type="button" class="project-btn button button-half-rounded button-raised"> Homeventory
       </button>
-      <button id="connect-four-btn" type="button" class="project-btn button secondary button-raised">
-       <svg class="svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="101px" height="22px" viewBox="1 0 103 11.58" xml:space="preserve">
-        <text class="svg-text project-btn-text" transform="matrix(1 0 0 1 1 11.4199)" font-family="'Rollergirls'" font-size="17">Connect Four</text>
-        </svg>
+      <button id="connect-four-btn" type="button" class="project-btn button button-half-rounded button-raised">
+      Connect Four
+     
       </button>
     </div>
     <div id="project-intro-box">
@@ -158,10 +150,10 @@
           <rect x="0" y="0" fill="none" width="80.064" height="17.984"/>
           <text fill="#222222" transform="matrix(1 0 0 1 5.9998 8.9919)" font-family="'PunkRockShow-Regular'" font-size="48">road warrior</text>
           </svg>
-        My goal was to create a more user-centric tour-management solution than what I had previously used. This was built using JQuery/Node.js/Postgresql but I plan on moving this over to MEAN stack in the near future.
+        My goal was to create a tour-management app that, unlike the industry standard solution, integrates better into a user's everyday life. In addition to managing events, this app currently utilizes calls to Yelp and the Open Weather API to quickly present recommended locations close to a venue and weather forecasts for upcoming shows. This was built using JQuery/Node.js/Postgresql but I plan on moving this over to MEAN stack or REACT in the near future.
       </p>
       <div class="tech-icon-row">
-        <div class="tech-icon-header">tech used:</div>
+        <div class="tech-icon-header">Technology Used:</div>
         <object class="tech-icon" type="image/svg+xml" data="./img/icons/html5.svg">HTML5</object>
         <object class="tech-icon" type="image/svg+xml" data="./img/icons/css3.svg">CSS3</object>
         <object class="tech-icon" type="image/svg+xml" data="./img/icons/bootstrap.svg">Bootstrap</object>
@@ -171,8 +163,8 @@
         <object class="tech-icon" type="image/svg+xml" data="./img/icons/postgresql.svg">Postgresql</object>
       </div>
       <div class="project-links-group">
-        <a href="https://roadwarrior.herokuapp.com/" class="project-link button secondary button-rounded">View</a>
-        <a href="https://github.com/brusinow/road-warrior" class="project-link button secondary button-rounded"><object data="./img/icons/github.svg" class="github-icon" type="image/svg+xml"></object>Github</a>
+        <a href="https://roadwarrior.herokuapp.com/" target="_blank" class="project-link button button-rounded">View</a>
+        <a href="https://github.com/brusinow/road-warrior" target="_blank" class="project-link button button-rounded"><object data="./img/icons/github.svg" class="github-icon" type="image/svg+xml"></object>Github</a>
       </div>
     </div> 
     <div id="homeventory-text-body" class="projects-text">
@@ -187,7 +179,7 @@
         This Ruby on Rails project helps people better remember what groceries they currently have and what they may be out of. Built with <a href="#">Kendall Goodwin</a>, <a href="#">Monte Hoover</a>, and <a href="#">Matthew Sluis</a>.
       </p>
       <div class="tech-icon-row">
-        <div class="tech-icon-header">tech used:</div>
+        <div class="tech-icon-header">Technology Used:</div>
         <object class="tech-icon" type="image/svg+xml" data="./img/icons/html5.svg">HTML5</object>
         <object class="tech-icon" type="image/svg+xml" data="./img/icons/css3.svg">CSS3</object>
         <object class="tech-icon" type="image/svg+xml" data="./img/icons/bootstrap.svg">Bootstrap</object>
@@ -198,8 +190,8 @@
         <object class="tech-icon" type="image/svg+xml" data="./img/icons/postgresql.svg">Postgresql</object>
       </div>
       <div class="project-links-group">
-        <a href="https://homeventory.herokuapp.com" class="project-link button secondary button-rounded">View</a>
-        <a href="https://github.com/montehoover/homeventory" class="project-link button secondary button-rounded"><span class="github-icon"><object data="./img/icons/github.svg" class="github-icon" type="image/svg+xml"></object></span>Github</a>
+        <a href="https://homeventory.herokuapp.com" target="_blank" class="project-link button button-rounded">View</a>
+        <a href="https://github.com/montehoover/homeventory" target="_blank" class="project-link button button-rounded"><span class="github-icon"><object data="./img/icons/github.svg" class="github-icon" type="image/svg+xml"></object></span>Github</a>
       </div>
     </div> 
     <div id="connect-four-text-body" class="projects-text">
@@ -213,7 +205,7 @@
         A responsive, mobile-friendly take on a classic board game. Features draggable/droppable gameplay and both 2-player and player vs computer modes.
       </p>
       <div class="tech-icon-row">
-        <div class="tech-icon-header">tech used:</div>
+        <div class="tech-icon-header">Technology Used:</div>
         <object class="tech-icon" type="image/svg+xml" data="./img/icons/html5.svg">HTML5</object>
         <object class="tech-icon" type="image/svg+xml" data="./img/icons/css3.svg">CSS3</object>
         <object class="tech-icon" type="image/svg+xml" data="./img/icons/bootstrap.svg">Bootstrap</object>
@@ -221,14 +213,45 @@
         <object class="tech-icon" type="image/svg+xml" data="./img/icons/jquery.svg">JQuery</object>
       </div>
       <div class="project-links-group">
-        <a href="http://brusinow.github.io/project-1/" class="project-link button secondary button-rounded">View</a>
-        <a href="https://github.com/brusinow/connect-four" class="project-link button secondary button-rounded"><object data="./img/icons/github.svg" class="github-icon" type="image/svg+xml"></object>Github</a>
+        <a href="http://brusinow.github.io/project-1/" target="_blank" class="project-link button button-rounded">View</a>
+        <a href="https://github.com/brusinow/connect-four" target="_blank" class="project-link button button-rounded"><object data="./img/icons/github.svg" class="github-icon" type="image/svg+xml"></object>Github</a>
       </div>
     </div> 
   </div>
 </div>
 </section>
 
+<div class="spacer"></div>
+<a id="contact" class="anchor"></a>
+<section name="contact" id="contact-section" class="content-section">
+ <div id="contact-header">
+    <h2 style="margin-top:10%;" class="section-header center-text header-margin">CONTACT ME!</h2>
+  </div>
+  <div id="contact-slogan">I can be reached through any of the channels listed below:</div>
+<div style="margin-top:2%;" class="contact-row row">
+ 
+    
+     <div class="contact-buttons"><a href="mailto:brusinow@gmail.com?Subject=Portfolio%20contact" target="_top"><i class="fi-mail contact-icons"></i></a></div>
+    <div class="contact-buttons"><a href="https://www.linkedin.com/in/brusinow" target="_blank"><i class="fi-social-linkedin contact-icons"></i></a></div>
+    <div class="contact-buttons"><a href="https://www.facebook.com/brusinow" target="_blank"><i class="fi-social-facebook contact-icons"></i></a></div>
+    <div class="contact-buttons"><a href="https://twitter.com/brusinow" target="_blank"><i class="fi-social-twitter contact-icons"></i></a></div>
+    <div class="contact-buttons"><a href="https://github.com/brusinow" target="_blank"><i class="fi-social-github contact-icons"></i></a></div>
+
+</div>
+
+
+
+
+
+
+
+
+</section>
+<div class="spacer"></div>
+<a id="resume" class="anchor"></a>
+<section name="resume" id="resume-section" class="content-section">
+
+</section>
 
 
 
