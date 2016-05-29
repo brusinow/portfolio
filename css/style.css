@@ -154,9 +154,11 @@ background-color: white;
 
 .spacer {
   width: 100%;
-  height: 150px;
+  height: 75px;
   background-color: transparent;
 }
+
+
 
 .center-text {
   text-align: center;
@@ -288,15 +290,17 @@ background-color: white;
 
 .project-name-header {
   display: block;
-  margin: 0 auto 15px auto;
+  margin: 0 auto 5px auto;
   width: 60%;
 }
+
+
 
 .projects-text {
   position: relative;
   top: -14px;
   margin: 0px auto 0px auto;
-  padding: 18px;
+  padding: 8px 18px 6px 18px;
   width: 100%;
   /*background-color: white;*/
   background: url("../img/metal.jpg");
@@ -306,9 +310,12 @@ background-color: white;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.29);
 }
 
+
+
 .projects-text p {
   text-align: justify;
-  font-size:15px;
+  font-size:14px;
+  margin-bottom: 3px;
 }
 
 /*#imac {
@@ -319,7 +326,7 @@ background-color: white;
 
 #imac-container {
   position: absolute;
-  bottom: -560px;
+  bottom: -550px;
   left: 0px;
   background: url("../img/imac.png") no-repeat center bottom;
   background-size: contain;
@@ -338,14 +345,13 @@ background-color: white;
 #big-iphone-container {
   display: none;
   z-index: 5;
-  width: 169px;
+  width: 130px;
   position: absolute;
-  bottom: -520px;
+  bottom: -570px;
   left: 30%;
   background: url("../img/iphone6.png") no-repeat center bottom;
   background-size: contain;
 }
-
 
 
 #demo-wrapper {
@@ -354,31 +360,32 @@ background-color: white;
 
 #connect-four-text-body {
   display: none;
-  height: 330px;
+  height: 200px;
 }
 
 #homeventory-text-body  {
   display: none;
-  height: 350px;
+  height: 205px;
 }
+
+
 
 #road-warrior-text-body {
   display: none;
-  height: 465px;
+  height: 275px;
 } 
 
-#road-warrior-text-body p {
-  font-size: 14px !important;
-  text-align: justify;
-}
+
 
 
 
 .desktop-img {
   position: absolute;
-  bottom: -430px;
+  bottom: -550px;
   left: 0px;
 }
+
+
 
 .mobile-img {
   width: 15.5%;
@@ -388,11 +395,13 @@ background-color: white;
 }
 
 .big-mobile-img {
-  width: 169px;
+  width: 130px;
   position: absolute;
-  bottom: -522px;
+  bottom: -572px;
   left: 30%;
 }
+
+
 
 #homeventory-desktop {
   display: none;
@@ -448,20 +457,22 @@ background-color: white;
 
 #arrow {
   position: absolute;
-  top: 30px;
-  left: 40px;
+  top: 10px;
+  left: 30px;
   width: 70px;
 }
 
 #intro-text {
-  font-size: 22px;
+  font-size: 18px;
   font-family: "Arvo";
   text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.19);
   color: white;
   position: absolute;
-  top: 142px;
-  left: 92px;
+  top: 128px;
+  left: 86px;
 }
+
+
 
 .dropdown-complete {
   margin-top: 3px;
@@ -474,13 +485,15 @@ background-color: white;
   font-size: 14px;
   font-family: "Oswald";
   font-weight: 200;
-  margin-bottom: 5px;
+  margin-bottom: 2px;
 }
 
 .tech-icon {
-  width: 24px;
-  margin: 2px;
+  width: 18px;
+  margin: 1px;
 }
+
+
 
 .github-icon {
   background: url("../img/icons.github.svg") no-repeat contain;
@@ -492,11 +505,13 @@ background-color: white;
 
 .project-link {
   display: inline-block;
-  width: 105px;
-  padding: 10px;
+  width: 95px;
+  padding: 5px;
   line-height: 16px;
   border: 1px solid #777777 !important;
 }
+
+
 
 .project-links-group {
   margin-top: 10px;
@@ -558,7 +573,7 @@ background-color: white;
   background-color: #bbbbbb;
   border-color: #bbbbbb;
   font-weight: 300;
-  font-size: 16px;
+  font-size: 13px;
   font-family: "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   text-decoration: none;
   display: inline-block;
@@ -818,6 +833,10 @@ a.active {
   border-bottom: 2px solid white !important;
 }
 
+.spacer { 
+  height: 150px;
+}
+
 .typebox {
   font-size: 36px;
 
@@ -895,13 +914,78 @@ a.active {
     height: 60%;
 }
 
+#arrow {
+  top: 30px;
+  left: 40px;
+}
+
+#intro-text {
+  font-size: 22px;
+  top: 142px;
+  left: 92px;
+}
+
+
+.desktop-img {
+  bottom: -430px;
+}
+
+.projects-text {
+  position: relative;
+  top: -14px;
+  margin: 0px auto 1rem auto;
+  padding: 18px;
+  width: 100%;
+  /*background-color: white;*/
+  background: url("../img/metal.jpg");
+  background-size: cover;
+  background-repeat:no-repeat;
+  border-radius: 0 0 6px 6px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.29);
+}
+
+.projects-text p {
+  text-align: justify;
+  font-size:15px;
+  margin-bottom: 1rem;
+}
+
+.project-name-header {
+  margin: 0 auto 15px auto; 
+}
+
+.tech-icon {
+  width: 24px;
+  margin: 2px;
+}
+
+.tech-icon-header{
+  margin-bottom: 5px;
+}
 
 
 
 
-
-
-
+  .button {
+  color: #555555;
+  background-color: #bbbbbb;
+  border-color: #bbbbbb;
+  font-weight: 300;
+  font-size: 16px;
+  font-family: "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  text-decoration: none;
+  display: inline-block;
+  appearance: none;
+  cursor: pointer;
+  border: none;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-transition-property: all;
+          transition-property: all;
+  -webkit-transition-duration: .3s;
+          transition-duration: .3s;
+        }
 
 
 .project-btn {
@@ -912,6 +996,44 @@ a.active {
   padding-left: 0px !important;
   padding-right: 0px !important;
 }
+
+
+.project-link {
+  width: 105px;
+  padding: 10px;
+}
+
+#connect-four-text-body {
+  display: none;
+  height: 330px;
+}
+
+#homeventory-text-body  {
+  display: none;
+  height: 350px;
+}
+
+#road-warrior-text-body {
+  display: none;
+  height: 465px;
+} 
+
+
+#big-iphone-container {
+  width: 169px;
+  bottom: -520px;
+  left: 30%;
+}
+
+.big-mobile-img {
+  width: 169px;
+  bottom: -522px;
+}
+
+
+
+
+
 }
 
 
