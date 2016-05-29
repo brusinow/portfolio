@@ -12,21 +12,28 @@ p {
 
 h2 {
   margin: 0 auto;
-  font-size: 3rem;
+  font-size: 2rem;
 }
 
+
 .title-bar {
-  z-index:-1;
-  background: #333;
-  padding: 0.9rem; }
+  position: fixed;
+  width: 115px;
+  z-index: 200;
+  background: rgba(0, 0, 0, .8);
+  padding: .7rem; }
 
 .top-bar {
-  background: #333; }
+    z-index: 202;
+    top: 48px;
+    width: 115px;
+    position: fixed;
+    background: rgba(0, 0, 0, .8); }
   .top-bar ul {
-    background: #333; }
+    background: transparent; }
     .top-bar ul li {
       text-align: left;
-      background: #333; }
+      background: transparent; }
       .top-bar ul li a {
         color: #fff; }
 
@@ -95,30 +102,6 @@ background-color: white;
 
 
 
-
-
-
-.typebox {
-  position: absolute;
-  width: 100%;
-  text-align: center;
-  color: white;
-  font-size: 36px;
-  font-family: "Arvo";
-  font-weight:300;
-}
-
-#phrase-1 {
-  top: 45%;
-  display: none;
-}
-
-#phrase-2 {
-  top: 51%;
-  display: none;
-}
-
-
   .top-bar .top-bar-center {
     width: 100%; }
   @media screen and (min-width: 40em) {
@@ -135,19 +118,39 @@ background-color: white;
     float: none;
 }
 
+
 #namebox {
-  display:none;
-  position: absolute;
-  width: 100%;
-  top: 33%;
-  text-align: center;
-  color: white;
-  font-size: 72px;
-  font-family: 'Bowlby One SC', sans-serif;
-  text-shadow: 2px 2px 4px #222222;
+    display: none;
+    position: absolute;
+    width: 100%;
+    top: 232px;
+    text-align: center;
+    color: white;
+    font-size: 42px;
+    line-height: 1;
+    font-family: 'Bowlby One SC', sans-serif;
+    text-shadow: 2px 2px 4px #222222;
 }
 
+.typebox {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-size: 16px;
+  font-family: "Arvo";
+  font-weight:300;
+}
 
+#phrase-1 {
+  top: 316px;
+  display: none;
+}
+
+#phrase-2 {
+  top: 338px;
+  display: none;
+}
 
 .spacer {
   width: 100%;
@@ -169,7 +172,7 @@ background-color: white;
   background-color: white;
   border-radius: 2px;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
-  margin: 10px auto 15px auto;
+  margin: 35px auto 2px auto;
   padding: 0 14px;
 }
 
@@ -212,13 +215,14 @@ background-color: white;
   background-repeat: none;
 }
 
+
 .about-img-panel {
-  height: 100%;
-  text-align: center; /* ensures the image is always in the h-middle */
-   /* hide the cropped portion */
-  background-color: white;
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
-  padding: 10px;
+    height: 50%;
+    /* margin: 0 25% 0 25%; */
+    text-align: center;
+    background-color: white;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+    padding: 10px;
 }
 
 .about-img {
@@ -233,41 +237,37 @@ background-color: white;
 }
 
 #about-img-brent {
-  background: url("../img/about-img.jpg") left center;
+  background: url("../img/about-img.jpg") center top;
   background-size: cover;
 }
 
 #about-text-container{
+  margin-top:5px;
+  padding:0px;
   height:100%;
 
 }
 
 #about-text {
-  height: 100%;
-  width: 90%;
-  margin:0 auto;
-
-  font-size: 1.4vw;
-  line-height: 1.3;
+    /* height: 100%; */
+  margin: 0 auto;
+  
+  text-align: justify;
+  line-height: 1;
   position: relative;
   background-color: white;
   border-radius: 2px;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
-  padding: 16px 24px;
+  padding: 10px 10px;
 }
 
-@media (min-width: 1068px) {
-  #about-text {
-  font-size: 1.3vw;
-  }
+#about-text p {
+  font-size: 12px;
+  text-align: justify;
+  margin-bottom: 5px;
 }
 
 
-@media (min-width: 1193px) {
-  #about-text {
-  font-size: 15px;
-  }
-}
 
 
 /*PROJECTS SECTION*/
@@ -281,8 +281,8 @@ background-color: white;
 }
 }
 
-#projects-header {
-  margin-top: 10px;
+.projects-header {
+  margin-top: 100px;
   margin-bottom: 10px;
 }
 
@@ -319,7 +319,7 @@ background-color: white;
 
 #imac-container {
   position: absolute;
-  bottom: -430px;
+  bottom: -560px;
   left: 0px;
   background: url("../img/imac.png") no-repeat center bottom;
   background-size: contain;
@@ -464,8 +464,7 @@ background-color: white;
 }
 
 .dropdown-complete {
-  position: absolute;
-    right: 3%;
+  margin-top: 3px;
     bottom: 20%;
     height: 60%;
 }
@@ -662,7 +661,7 @@ background-color: white;
 
 .project-btn {
   width: 33.3333333%;
-  font-size: 12px;
+  font-size: 11px !important;
   font-weight: 400;
   font-family: 'Bowlby One SC';
   padding-left: 0px !important;
@@ -730,7 +729,16 @@ background-color: white;
 }
 
 
+
+
+
+
 @media (min-width: 641px) {
+h2 {
+  margin: 0 auto;
+  font-size: 3rem;
+}
+
 a.anchor {
   top: -100px;
 }
@@ -757,6 +765,9 @@ a.anchor {
     line-height: 1;
 }
 
+.top-bar {
+  top: 0px;
+}
 .title-bar {
   z-index:200;
   background-color: black;
@@ -807,10 +818,100 @@ a.active {
   border-bottom: 2px solid white !important;
 }
 
+.typebox {
+  font-size: 36px;
+
+}
+
+#phrase-1 {
+  top: 45%;
+}
+
+#phrase-2 {
+  top: 51%;
+}
+
+#namebox {
+  top: 33%;
+  font-size: 72px;
+}
+
+.about-img-panel {
+  height: 100%;
+  text-align: center; /* ensures the image is always in the h-middle */
+   /* hide the cropped portion */
+  background-color: white;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+  padding: 10px;
+}
+
+#about-img-brent {
+  background: url("../img/about-img.jpg") left center;
+  background-size: cover;
+}
+
+.header-panel {
+  display: inline-block;
+  background-color: white;
+  border-radius: 2px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+  margin: 10px auto 15px auto;
+  padding: 0 14px;
+}
+
+
+#about-text-container{
+  margin-top:0px;
+  padding:0px;
+  height:100%;
+
+}
+
+#about-text {
+  height: 100%;
+  width: 90%;
+  margin:0 auto;
+  
+  position: relative;
+  background-color: white;
+  border-radius: 2px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+  padding: 16px 24px;
+}
+
+#imac-container {
+  position: absolute;
+  bottom: -430px;
+  left: 0px;
+  background: url("../img/imac.png") no-repeat center bottom;
+  background-size: contain;
+}
+
+.dropdown-complete {
+  margin-top: 0px;
+  position: absolute;
+    right: 3%;
+    bottom: 20%;
+    height: 60%;
+}
 
 
 
 
+
+
+
+
+
+
+.project-btn {
+  width: 33.3333333%;
+  font-size: 13px !important;
+  font-weight: 400;
+  font-family: 'Bowlby One SC';
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
 }
 
 
@@ -835,6 +936,13 @@ a.active {
   #connect-four-text-body {
   height: 245px;
   }
+
+  #about-text p {
+  font-size: 14.2px;
+  line-height: 1.3;
+  text-align: justify;
+  margin-bottom: 10px;
+}
 }
 
 
@@ -901,17 +1009,21 @@ a.active {
 }
 
 
-@media (min-width: 1190px) {
-/*  .dropdown-complete {
-  margin-top:8%;
-  }*/
-/*    .project-btn {
-    font-size: 1.0vw !important;
-  }*/
+@media (min-width: 1200px) {
+#about-text p {
+  font-size: 16px;
+}
 }
 
 @media (max-width: 1025px) {
  #screensaver {
   left: 16px;
  }
+}
+
+@media (min-width: 1441px){
+
+
+
+
 }

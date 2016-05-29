@@ -21,13 +21,19 @@
 
 
 
-<div class="title-bar" data-responsive-toggle="main-menu" data-hide-for="medium">
+
+
+
+
+
+
+<div id="mobile-nav" class="title-bar" data-responsive-toggle="main-menu" data-hide-for="medium">
   <button class="menu-icon" type="button" data-toggle></button>
   <div class="title-bar-title">Menu</div>
 </div>
 
-
 <div class="top-bar not-scrolled" id="main-menu">
+
   <div class="top-bar-right">
     <ul class="menu" data-responsive-menu="drilldown medium-dropdown">
       <li><a class="main-link" href="#home">HOME</a></li>
@@ -58,8 +64,9 @@
   </div>
 </div>
 <div style="margin-top: 5px;" id="about-row" class="row"> 
-  <div id="neumos" class="about-img-panel columns small-12 large-3 medium-3">
-    <div id="about-img-neumos" class="about-img"></div>
+
+   <div class="about-img-panel columns small-12 large-3 medium-3">
+    <div id="about-img-brent" class="about-img"></div>
   </div>
   <div id="about-text-container" class="columns small-12 large-6 medium-6">
   <div id="about-text">
@@ -74,8 +81,8 @@
     </p>
     </div>
   </div> 
-  <div class="about-img-panel columns small-12 large-3 medium-3">
-    <div id="about-img-brent" class="about-img"></div>
+   <div id="neumos" class="hide-for-small-only about-img-panel columns small-12 large-3 medium-3">
+    <div id="about-img-neumos" class="about-img"></div>
   </div>
 </div>
 <!--  <div id="bottom-1" class="about-img bottom-row-about-img">
@@ -94,8 +101,9 @@
 <a id="projects" class="anchor"></a>
 <section name="projects" id="projects-section" class="content-section">
 <div class="header-row row">
-  <div id="projects-header">
-    <h2 class="section-header-invert center-text header-margin">PROJECTS</h2>
+<div style="margin-top:30px;" class"show-for-small-only"></div>
+  <div class="projects-header">
+    <h2 class="section-header-invert center-text">PROJECTS</h2>
   </div>
 </div>
 
@@ -111,16 +119,16 @@
         <img src="./img/imac-spacer.png" style="visibility: hidden;" />
       </div>
        <!--  <img id="imac" src="./img/imac.png" alt="iMac"/> -->
-        <div id="iphone-container">
+        <div id="iphone-container" class="hide-for-small-only">
           <img src="./img/iphone-spacer.png" style="visibility: hidden;" />
         </div>
          <div id="big-iphone-container">
           <img src="./img/iphone-spacer.png" style="visibility: hidden;" />
         </div>
          <img id="road-warrior-mobile" class="big-mobile-img" src="./img/road-warrior-mobile.png" alt="road-warrior-mobile"/>
-        <img id="iphone-lock-screen" class="mobile-img" src="./img/iphone-lock-screen.png" alt="iphone-lock-screen"/> 
-        <img id="homeventory-mobile" class="mobile-img" src="./img/homeventory-mobile.png" alt="homeventory-mobile"/> 
-        <img id="connect-four-mobile" class="mobile-img" src="./img/connect-four-mobile.png" alt="connect-four-mobile"/> 
+        <img id="iphone-lock-screen" class="hide-for-small-only mobile-img" src="./img/iphone-lock-screen.png" alt="iphone-lock-screen"/> 
+        <img id="homeventory-mobile" class="hide-for-small-only mobile-img" src="./img/homeventory-mobile.png" alt="homeventory-mobile"/> 
+        <img id="connect-four-mobile" class="hide-for-small-only mobile-img" src="./img/connect-four-mobile.png" alt="connect-four-mobile"/> 
         <img id="homeventory-desktop" class="desktop-img" src="./img/homeventory-desktop.png" alt="homeventory-desktop"/> 
         <img id="connect-four-desktop" class="desktop-img" src="./img/connect-four-desktop.png" alt="connect-four-desktop"/> 
     </div>

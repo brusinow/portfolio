@@ -43,10 +43,6 @@ $('.main-link').click(function(){
 
 $(document).ready(function() {
     $(window).resize(function() {
-        var width = $(this).width();
-        if (width >= 640){
-          $('.top-bar').show();
-        }
         var bodyheight = $(this).height();
         $("#welcome").height(bodyheight);
     }).resize();
