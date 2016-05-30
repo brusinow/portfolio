@@ -53,7 +53,7 @@ $(document).ready(function() {
         var bodyheight = $(this).height();
         var width = $(this).width();
         if (width <= 640){
-        $(".content-section").height(bodyheight); 
+        $(".content-section").height(bodyheight+100); 
         } else {
         $(".content-section").height(bodyheight-120);
       }
