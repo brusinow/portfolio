@@ -266,7 +266,7 @@ background-color: white;
 }
 
 #about-text p {
-  font-size: 12.5px;
+  font-size: 14px;
   text-align: justify;
   margin-bottom: 5px;
 }
@@ -882,7 +882,7 @@ a.active {
   display: inline-block;
   background-color: white;
   border-radius: 2px;
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.29);
   margin: 10px auto 15px auto;
   padding: 0 14px;
 }
@@ -1084,13 +1084,14 @@ a.active {
 
   #projects-mini-nav{
   width: 450px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.29);
   }
 
   .dropdown-complete {
   margin-top: 0px;
   position: absolute;
-  right: 3%;
-  bottom: 20%;
+  right: 5%;
+  bottom: 12%;
   height: 60%;
   width: 41.66667%;
 }
@@ -1104,7 +1105,7 @@ a.active {
   width: 25%;
   margin: 0;
   background-color: white;
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.29);
   padding: 10px;
   }
 
@@ -1124,7 +1125,7 @@ a.active {
   position: relative;
   background-color: white;
   border-radius: 2px;
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.29);
   padding: 16px 24px;
 }
 
@@ -1190,15 +1191,15 @@ a.active {
   }
 
   #homeventory-text-body {
-  height: 275px;
+  height: 235px;
   }
 
   #road-warrior-text-body {
-  height: 360px;
+  height: 335px;
   }
 
   #connect-four-text-body {
-  height: 245px;
+  height: 225px;
   }
 
   #about-text p {
@@ -1216,6 +1217,7 @@ a.active {
 
 .project-btn {
   width: 33.3333333%;
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.19);
   font-size: 13px !important;
   font-weight: 400;
   font-family: 'Bowlby One SC';
@@ -1223,7 +1225,17 @@ a.active {
   padding-right: 0px !important;
 }
 
+#arrow {
+    top: 10px;
+    left: 60px;
+    width: 90px;
+}
 
+#intro-text {
+    font-size: 30px;
+    top: 152px;
+    left: 130px;
+}
 
 }
 

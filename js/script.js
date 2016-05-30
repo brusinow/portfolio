@@ -53,7 +53,9 @@ $(document).ready(function() {
         var bodyheight = $(this).height();
         var width = $(this).width();
         if (width <= 640){
-        $(".content-section").height(bodyheight+100); 
+        $("#about-section").height(bodyheight+160);  
+        $("#projects-section").height(bodyheight+80); 
+        $("#contact-section").height(bodyheight+40);
         } else {
         $(".content-section").height(bodyheight-120);
       }
