@@ -51,10 +51,16 @@ $(document).ready(function() {
 $(document).ready(function() {
     $(window).resize(function() {
         var bodyheight = $(this).height();
+        console.log("height is: ",bodyheight);
         var width = $(this).width();
-        if (width <= 640){
-        $("#about-section").height(bodyheight+160);  
-        $("#projects-section").height(bodyheight+80); 
+        if (width <= 321){
+        $("#about-section").height(bodyheight+260);
+        $("#projects-section").height(bodyheight+40); 
+        $("#contact-section").height(bodyheight+20);    
+        }
+        else if (width > 321 && width <= 640){
+        $("#about-section").height(bodyheight+100);  
+        $("#projects-section").height(bodyheight+40); 
         $("#contact-section").height(bodyheight+40);
         } else {
         $(".content-section").height(bodyheight-120);
