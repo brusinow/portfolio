@@ -59,7 +59,7 @@ $(document).ready(function() {
         $("#contact-section").height(bodyheight+20);    
         }
         else if (width > 321 && width <= 640){
-        $("#about-section").height(bodyheight+100);  
+        $("#about-section").height(bodyheight+170);  
         $("#projects-section").height(bodyheight+40); 
         $("#contact-section").height(bodyheight+40);
         } else {
