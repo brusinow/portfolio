@@ -1119,6 +1119,19 @@ a.active {
 
 
 @media (min-width: 641px) and ( min-height: 900px ) and ( max-height: 1025px ){
+#about-text p {
+    font-size: 13.5pt;
+}
+
+
+#screensaver {
+    position: absolute;
+    width: 90%;
+    max-width: 95%;
+    margin-top: 48%;
+    left: 26px;
+}
+
 #road-warrior-text-body {
     display: none;
     height: 300px;
