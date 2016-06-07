@@ -36,10 +36,10 @@
 
   <div class="top-bar-right">
     <ul class="menu" data-responsive-menu="drilldown medium-dropdown">
-      <li><a class="main-link" href="#home">HOME</a></li>
-      <li><a class="main-link" href="#about">ABOUT ME</a></li>
+      <li><a id="home-nav-link" class="main-link" href="#home">HOME</a></li>
+      <li><a id="about-nav-link" class="main-link" href="#about">ABOUT ME</a></li>
       <li><a id="projects-nav-link" class="main-link" href="#projects">PROJECTS</a></li>
-      <li><a class="main-link" href="#contact">CONTACT</a></li>
+      <li><a id="contact-nav-link" class="main-link" href="#contact">CONTACT</a></li>
       <li><a id="resume-link" class="main-link" target="_blank" href="./docs/BrentRusinowResume.pdf">RESUME</a></li>
     </ul>
   </div>
@@ -58,21 +58,12 @@
 
 <a id="about" class="anchor"></a>
 <section name="about" id="about-section" class="content-section">
-<div class="header-row row">
-  <div id="about-header" class="header-panel">
-    <h2 class="section-header center-text header-margin">ABOUT ME</h2>
-  </div>
-</div>
-<div style="margin-top: 5px;" id="about-row" class="row"> 
 
-   <div class="about-img-panel columns small-12 large-3 medium-6">
-    <div id="about-img-brent" class="about-img"></div>
-  </div>
-  <div id="neumos-medium" class="show-for-medium-only about-img-panel columns medium-6">
-    <div id="about-img-neumos" class="about-img"></div>
-  </div>
-  <div id="about-text-container" class="columns small-12 large-6 medium-12">
-  <div id="about-text">
+  <div id="about-left" class="large-6 small-12">
+    <div id="about-text"> 
+    <div id="about-header">
+      <h2 class="section-header center-text header-margin">ABOUT ME</h2>
+    </div>
     <p>
       Hi, my name is Brent and I am a creative-minded, solutions-driven software developer with a passion for intuitive design and function. My previous experience as a full-time touring musician informs everything that I do: from my ability to adapt and adjust plans quickly to finding efficient, concise solutions for challenging problems. My work ethic is reflected in my work, whether I am collaborating with my team to execute thoughtful user experiences or working on my own web-based passion projects. 
     </p>
@@ -83,15 +74,8 @@
       Currently, I live in Ballard with my wife and our dog and cat. Together, we spend our spare time exploring our city, digging through record stores, and venturing out to Seattle’s trendy restaurants. 
     </p>
     </div>
-  </div> 
-   <div id="neumos" class="about-img-panel columns large-3">
-    <div id="about-img-neumos" class="about-img"></div>
   </div>
-</div>
-
-
-
-
+  <div id="about-right" class="large-6 small-12"></div>
 
 </section>
 <div class="spacer"></div>
@@ -102,7 +86,7 @@
  <!-- <div id="project-header-test" class="header-panel">
     <h2 class="section-header center-text header-margin">PROJECTS</h2>
   </div> -->
-    <h2 id="project-heading-title" class="projects-header section-header-invert">PROJECTS</h2>
+    <h2 id="project-heading-title" class="projects-header section-header-white">PROJECTS</h2>
 </div>
 
 <div style="height: 100%;" class="row">  
@@ -138,11 +122,11 @@
   <div style="text-align: center;" class="dropdown-complete columns small-12 large-5 medium-6">
     <div id="projects-mini-nav" class="button-group even-3">
      <!--  <button type="button" class="project-btn button button-raised">Project 4</button> -->
-      <button id="road-warrior-btn" type="button" class="project-btn button button-rounded button-raised">Road Warrior
+      <button id="road-warrior-btn" type="button" class="project-btn button button-rounded">Road Warrior
       </button>
-      <button id="homeventory-btn" type="button" class="project-btn button button-rounded button-raised"> Homeventory
+      <button id="homeventory-btn" type="button" class="project-btn button button-rounded"> Homeventory
       </button>
-      <button id="connect-four-btn" type="button" class="project-btn button button-rounded button-raised">
+      <button id="connect-four-btn" type="button" class="project-btn button button-rounded">
       Connect Four
      
       </button>
@@ -157,7 +141,7 @@
     <div id="road-warrior-text-body" class="projects-text">
     <object class="project-name-header" data="./img/road-warrior.svg"></object>
       <p>
-        My goal was to create a tour-management app that, unlike the industry standard solution, integrates better into a user's everyday life. In addition to managing events, this app currently utilizes calls to Yelp and the Open Weather API to quickly present recommended locations close to a venue and weather forecasts for upcoming shows. <span class="hide-for-small-only">This was built using JQuery/Node.js/Postgresql but I plan on moving this over to MEAN stack or React in the near future.</span>
+        My goal was to create a tour-management app that, unlike the industry standard solution, integrates better into a user's everyday life. In addition to managing events, this app currently utilizes calls to Yelp and the Open Weather API to quickly present recommended locations close to a venue and weather forecasts for upcoming shows. <span class="hide-for-small-only">This was built using JQuery/Node.js/Postgresql but I plan on moving this to MEAN stack or React.js in the near future.</span>
       </p>
       <div class="tech-icon-row">
         <div class="tech-icon-header">Technology Used:</div>

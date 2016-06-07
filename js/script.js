@@ -1,3 +1,31 @@
+var width = 0
+
+var clickScroll = false;
+var isScrolling = false;
+var topScroll = 0;
+var home = 0;
+var about = 0;
+var projects = 0;
+var contact = 0;
+
+
+// $(document).ready(function() {
+//   setTimeout(function(){
+// home = $('#home').offset().top;
+// console.log("HOME is: ",home);
+// about = $('#about').offset().top;
+// console.log("ABOUT is: ",about);
+// projects = $('#projects').offset().top;
+// console.log("PROJECTS is: ",projects);
+// contact = $('#contact').offset().top;
+// console.log("CONTACT is: ",contact);
+//   }, 400);
+
+// });
+
+
+
+
 $(document).ready(function() {
   $(".menu").delay(300).fadeIn(800); 
   $("#namebox").delay(600).fadeIn(1500);
@@ -11,7 +39,89 @@ $(document).ready(function(){
 });
 
 
+// $( window ).scroll(function(event) {
+//   event.preventDefault();
+//   console.log("Was preventDefault() called: " + event.isDefaultPrevented());
+//   if (!clickScroll && width > 1024 && !isScrolling){ 
+//     var currentTop = $(this).scrollTop();
+//     $('.top-bar a').removeClass("active");
+//     isScrolling = true;
+//     console.log("currentTop is: ",currentTop);
+//     console.log("topScroll is: ",topScroll);
+//     if (currentTop - topScroll > 0){
+//       scrollDown(currentTop);
+
+//     } else if (currentTop - topScroll < 0){
+//       scrollUp(currentTop);
+//       }    
+//     setTimeout(function(){
+//       topScroll = $(this).scrollTop();
+//       console.log("after done scrolling, topScroll is: ",topScroll);
+//       isScrolling = false;
+//     }, 1000);
+//   }
+// });
+
+
+function scrollDown(currentTop){
+  if (currentTop > home && currentTop < about){
+        $('#about-nav-link').addClass("active");
+         $('html, body').animate({
+        scrollTop: about
+    }, 1000); 
+      
+    console.log("scroll down to about");
+  } else if (currentTop > about && currentTop < projects){
+    $('#projects-nav-link').addClass("active");
+          $('html, body').animate({
+        scrollTop: projects
+    }, 1000); 
+       
+      console.log("scroll down to projects");
+  } else if (currentTop > projects && currentTop < contact){
+    $('#contact-nav-link').addClass("active");
+            $('html, body').animate({
+        scrollTop: contact
+    }, 1000); 
+        
+      console.log("scroll down to contact");
+  } else {
+    console.log("no scroll down");
+  }
+}
+
+function scrollUp(currentTop){
+  if (currentTop >= home && currentTop < about){
+    $('#home-nav-link').addClass("active");
+         $('html, body').animate({
+        scrollTop: home
+    }, 1000); 
+      
+    console.log("scroll up to home");
+  } else if (currentTop >= about && currentTop < projects){
+    $('#about-nav-link').addClass("active");
+          $('html, body').animate({
+        scrollTop: about
+    }, 1000);
+      
+    console.log("scroll up to about");
+  } else if (currentTop >= projects && currentTop < contact){
+    $('#projects-nav-link').addClass("active");
+            $('html, body').animate({
+        scrollTop: projects
+    }, 1000); 
+           
+    console.log("scroll up to projects");
+  } else {
+    console.log("no scroll up");
+  }
+}
+
+
+
 $('.main-link').click(function(){
+  clickScroll = true;
+  console.log("entering click: ",clickScroll);
   $('.top-bar a').removeClass("active");
   if($(this).attr("id") !== "projects-nav-link" && $(this).attr("id") !== "resume-link" && $('.project-btn').hasClass("active")){
     $('.project-btn').removeClass("active");
@@ -21,11 +131,16 @@ $('.main-link').click(function(){
     $('#road-warrior-btn, #homeventory-btn, #connect-four-btn').delay(200).addClass("button-rounded");
     $('#road-warrior-btn, #homeventory-btn, #connect-four-btn').delay(200).removeClass("button-half-rounded");
   }
-  if ($(this).attr("id") !== "resume-link"){
+  if ($(this).attr("id") !== "resume-link" && clickScroll){
   $(this).addClass("active");
     $('html, body').animate({
         scrollTop: $( $(this).attr('href') ).offset().top
     }, 800);
+    setTimeout(function(){
+      clickScroll = false; 
+      console.log("exiting click: ",clickScroll);
+    }, 1000);
+    topScroll = $( $(this).attr('href') ).offset().top;
     return false;
   }
 });
@@ -33,7 +148,6 @@ $('.main-link').click(function(){
 
  $('.main-link').click(function(evt) {
     var width = $(window).width();
-    console.log(width);
     if (width <= 640){
     $('.top-bar').hide();
   }
@@ -51,8 +165,7 @@ $(document).ready(function() {
 $(document).ready(function() {
     $(window).resize(function() {
         var bodyheight = $(this).height();
-        console.log("height is: ",bodyheight);
-        var width = $(this).width();
+        width = $(this).width();
         if (width <= 321){
         $("#about-section").height(bodyheight+260);
         $("#projects-section").height(bodyheight+40); 
