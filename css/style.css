@@ -365,9 +365,19 @@ background-color: white;
 
 
 .project-name-header {
-  display: block;
+  display: inline-block;
   margin: 0 auto 5px auto;
-  width: 80%;
+  width: 65%;
+  vertical-align: bottom;
+}
+
+.version-text {
+    display: inline-block;
+    font-family: "Arvo", sans-serif;
+    font-weight: 500;
+    margin-bottom: 4px;
+    margin-left: 5px;
+    font-size: 1.3em;
 }
 
 #projects-mini-nav{
@@ -439,6 +449,11 @@ background-color: white;
 
 .big-iphone-container.roadwarrior-v2 {
   background: url("../img/road-warrior-v2.png") no-repeat center bottom;
+  background-size: contain;
+}
+
+.big-iphone-container.roadwarrior-v1 {
+  background: url("../img/road-warrior-v1.png") no-repeat center bottom;
   background-size: contain;
 }
 
@@ -580,11 +595,11 @@ background-color: white;
     height: 60%;
 }
 
-.tech-icon-header{
-  color: #222222;
-  font-size: 14px;
-  font-family: "Oswald";
-  font-weight: 200;
+.tech-icon-header {
+    color: #222222;
+    font-size: 12px;
+    font-family: "Arvo";
+    font-weight: 600;
 }
 
 .tech-icon {
@@ -1065,11 +1080,7 @@ a.active {
   top: 0px;
 }
 
-.project-name-header {
-  display: block;
-  margin: 0 auto 5px auto;
-  width: 40%;
-}
+
 
 .tech-icon {
     width: 20px;
