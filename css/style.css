@@ -23,118 +23,47 @@ h1 {
   margin-bottom: 0px;
 }
 
-.button-group .button {
-    margin: 0;
-    font-size: .5rem;
+
+
+.project-buttons {
+  font-size: 14px;
+  color: #222;
+  font-weight: 400;
 }
-
-.button {
-  color: #333333;
-  background-color: #bbbbbb;
-  border-color: #bbbbbb;
-  font-weight: 300;
-  font-size: 13px;
-  font-family: "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-  text-decoration: none;
-  display: inline-block;
-  appearance: none;
-  cursor: pointer;
-  border: none;
-  -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box;
-  -webkit-transition-property: all;
-          transition-property: all;
-  -webkit-transition-duration: .3s;
-          transition-duration: .3s;
-        }
-
-
-.button:visited {
-    color: #333333; }
-  .button:hover, .button:focus {
-    color: #bbbbbb;
-    background-color: #d6d6d6;
-    text-decoration: none;
-    outline: none; }
-  .button:active, .button.active, .button.is-active {
-    text-decoration: none;
-    background-color: #eeeeee;
-    border-color: #cfcfcf;
-    color: #a2a2a2;
-    -webkit-transition-duration: 0s;
-            transition-duration: 0s;
- }
-  .button.disabled, .button.is-disabled, .button:disabled {
-    top: 0 !important;
-    background: #EEE !important;
-    border: 1px solid #DDD !important;
-    text-shadow: 0 1px 1px white !important;
-    color: #CCC !important;
-    cursor: default !important;
-    appearance: none !important; }
-    .button.disabled else, .button.is-disabled else, .button:disabled else {
-      -webkit-box-shadow: none !important;
-              box-shadow: none !important;
-      opacity: .8 !important; }
-
-
-  .button-group {
-  *zoom: 1;
-  margin-bottom:0px;
-  position: relative;
-  top: -8px;
-  display: inline-block; }
-  .button-group:after, .button-group:before {
-    content: '.';
-    clear: both;
-    display: block;
-    overflow: hidden;
-    visibility: hidden;
-    font-size: 0; }
-  .button-group .button,
-  .button-group .button-dropdown {
-   }
-    .button-group .button:not(:first-child):not(:last-child),
-    .button-group .button-dropdown:not(:first-child):not(:last-child) {
-      border-radius: 0;
-      border-right: none; }
-    .button-group .button:first-child,
-    .button-group .button-dropdown:first-child {
-      border-top-right-radius: 0;
-      border-bottom-right-radius: 0;
-      border-right: none; }
-    .button-group .button:last-child,
-    .button-group .button-dropdown:last-child {
-      border-top-left-radius: 0;
-      border-bottom-left-radius: 0; }
-
-  .button-raised {
-  border-color: #c1c1c1;
-  border-style: solid;
-  border-width: 1px;
-  background: -webkit-gradient(linear, left top, left bottom, from(#f6f6f6), to(#e1e1e1));
-  background: linear-gradient(#d6d6d6, #c1c1c1);
-  -webkit-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.3), 0 1px 2px rgba(0, 0, 0, 0.15);
-          box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.3), 0 1px 2px rgba(0, 0, 0, 0.15); }
-  .button-raised:hover, .button-raised:focus {
-    background: -webkit-gradient(linear, left top, left bottom, from(white), to(gainsboro));
-    background: linear-gradient(top, white, gainsboro); }
-  .button-raised:active, .button-raised.active, .button-raised.is-active {
-    background: #eeeeee;
-    -webkit-box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.2), 0px 1px 0px rgba(255, 255, 255, 0.4);
-            box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.2), 0px 1px 0px rgba(255, 255, 255, 0.4); }
 
 .project-slider {
   width: 90%;
   margin: 0 5%;
 }
 
-.project-slider p{
-  font-size: .9em;
+.project-slider.slider-header {
   color: white;
+  font-size: 1.4em;
+}
+
+.project-slider p{
+  font-size: .8em;
+  color: #000;
   text-align: justify;
-  
+  margin-bottom: 10px;
+
+}
+
+.white-box {
+  background-color: white;
+  padding: 10px;
+  display: inline-block;
+  border: 1px solid #222;
+}
+
+.white-box-outer {
+  background-color: white;
+  padding: 6px;
+  display: inline-block;
+}
+
+.no-margin {
+  margin: 0 !important;
 }
 
 @media (min-width: 1280px) {
@@ -423,7 +352,8 @@ background-color: white;
 
 #projects-section {
   /*background-color: #0E3F6B;*/
-  background-color: #3e6588;
+  /*background-color: #3e6588;*/
+  background-color: #c0cedc;
 }
 
 
@@ -437,7 +367,7 @@ background-color: white;
 .project-name-header {
   display: block;
   margin: 0 auto 5px auto;
-  width: 60%;
+  width: 80%;
 }
 
 #projects-mini-nav{
@@ -472,41 +402,58 @@ background-color: white;
   left: 0px;
 }*/
 
-#imac-container {
-  position: absolute;
-  bottom: -450px;
-  left: 0px;
+.imac-container {
+  position: relative;
+  width: 90%;
+  height: 100%;
+  margin: 0 auto;
   background: url("../img/imac-flat.png") no-repeat center bottom;
   background-size: contain;
 }
 
 
 
-#iphone-container {
+.iphone-container {
   z-index: 5;
+  position: relative;
   width: 16%;
-  position: absolute;
-  bottom: -405px;
-  right: 0px;
+  height: 100%;
   background: url("../img/iphone-flat.png") no-repeat center bottom;
   background-size: contain;
-  max-height: 126px;
   max-width: 63.59px;
 }
 
 
 
 
-#big-iphone-container {
-  z-index: 5;
-  width: 33%;
-  margin:0 auto;
-  background: url("../img/iphone-flat.png") no-repeat center bottom;
-  background-size: contain;
+.big-iphone-container {
+    position: relative;
+    z-index: 5;
+    width: 32%;
+    height: 100%;
+    margin: 0 auto;
+    background: url("../img/iphone-flat.png") no-repeat center bottom;
+    background-size: contain;
+    
 }
 
-#demo-wrapper {
+.single-project-slide {
   position: relative;
+}
+
+.demo-wrapper {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.single-project-text {
+  text-align: center; 
+  float: right;
+}
+
+.single-project-img {
+  float: left;
 }
 
 #connect-four-text-body {
@@ -633,12 +580,20 @@ background-color: white;
   font-size: 14px;
   font-family: "Oswald";
   font-weight: 200;
-  margin-bottom: 2px;
 }
 
 .tech-icon {
+  display: inline-block;
   width: 18px;
   margin: 1px;
+}
+
+.tech-icon-row {
+  margin-bottom: 5px;
+}
+
+.icon-in-button {
+  margin-bottom: 4px;
 }
 
 .github-icon {
@@ -726,9 +681,7 @@ background-color: white;
 
 
 
-.button-group .button:not(:last-child) {
-  margin-right: -1px;
-}
+
 
 
 #contact-section {
@@ -789,10 +742,7 @@ background-color: white;
 
 @media (min-width: 321px) {
 
-.button-group .button {
-  margin: 0;
-  font-size: .5rem;
-}
+
 
 .projects-text {
   position: relative;
@@ -817,9 +767,7 @@ background-color: white;
 
 
 
-#imac-container {
-  bottom: -410px;
-}
+
 
 .desktop-img {
   bottom: -490px;
@@ -875,10 +823,7 @@ a.anchor {
   top: -100px;
 }
 
-.button-group .button {
-    margin: 0;
-    font-size: .9rem;
-}
+
 
 .slogan {
   font-size: 1.1em;
@@ -1053,17 +998,7 @@ a.active {
 
 
 
-#imac-container {
-  position: absolute;
-  bottom: -520px;
-  background: url("../img/imac-flat.png") no-repeat center bottom;
-  background-size: contain;
-  width: 100%;
-  /* margin: 0 auto; */
-  left: 50%;
-  max-height: 485px;
-  max-width: 397.5px;
-}
+
 
 #projects-mini-nav{
   width: inherit;
@@ -1145,26 +1080,7 @@ a.active {
 
 
 
-  .button {
-  color: #333333;
-  background-color: #bbbbbb;
-  border-color: #bbbbbb;
-  font-weight: 300;
-  font-size: 16px;
-  font-family: "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-  text-decoration: none;
-  display: inline-block;
-  appearance: none;
-  cursor: pointer;
-  border: none;
-  -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box;
-  -webkit-transition-property: all;
-          transition-property: all;
-  -webkit-transition-duration: .3s;
-          transition-duration: .3s;
-        }
+  
 
 
 .project-btn {
@@ -1252,17 +1168,6 @@ a.active {
 }
 
 
-#imac-container {
-    position: absolute;
-    bottom: -700px;
-    background: url("../img/imac-flat.png") no-repeat center bottom;
-    background-size: contain;
-    width: 150%;
-    /* margin: 0 auto; */
-    left: 25%;
-    max-height: none;
-    max-width: none;
-}
 
 .desktop-img {
     position: absolute;
@@ -1282,17 +1187,7 @@ a.active {
     max-width: none;
 }
 
-#iphone-container {
-    z-index: 5;
-    width: 26%;
-    position: absolute;
-    bottom: -695px;
-    left: 160%;
-    background: url("../img/iphone-flat.png") no-repeat center bottom;
-    background-size: contain;
-    max-height: none;
-    max-width: none;
-}
+
 }
 
 
@@ -1400,17 +1295,7 @@ a.active {
 }
 
 
-  #imac-container {
-  position: absolute;
-  bottom: -670px;
-  left: 0px;
-  background: url("../img/imac-flat.png") no-repeat center bottom;
-  background-size: contain;
-  width: 100%;
-  max-height: none;
-  max-width: none;
-  /* margin: 0 auto; */
-}
+
 
 #screensaver {
     left: 28px;
@@ -1436,17 +1321,7 @@ a.active {
   max-width: none;
 }
 
-  #iphone-container {
-  z-index: 5;
-  width: 15.5%;
-  position: absolute;
-  bottom: -428px;
-  left: 92%;
-  background: url("../img/iphone-flat.png") no-repeat center bottom;
-  background-size: contain;
-  max-height: none;
-  max-width: none;
-  }
+
 
   .projects-text {
   overflow: hidden;

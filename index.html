@@ -14,11 +14,13 @@
     <link rel="stylesheet" type="text/css" href="./css/slick.css"/>
     <link rel="stylesheet" type="text/css" href="./css/slick-theme.css"/>
      <link rel="stylesheet" 
-      href="./css/foundation-icons/foundation-icons.css"/>    
+      href="./css/foundation-icons/foundation-icons.css"/> 
+      <link rel="stylesheet" type="text/css" href="./css/buttons.css"/>   
       <link rel="stylesheet" href="./css/style.css">
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
     <script src="./js/jquery.vide.min.js"></script>
     <script type="text/javascript" src="./js/slick.js"></script>
+    <script type="text/javascript" src="./js/buttons.js"></script>
   </head>
   <body>
 
@@ -86,31 +88,47 @@
 
 
 <section name="projects" id="projects-section" class="content-section">
-<div id="project-head-row" class="row">
-<div style="margin-top:30px;" class"show-for-small-only"></div>
- <!-- <div id="project-header-test" class="header-panel">
-    <h2 class="section-header center-text header-margin">PROJECTS</h2>
-  </div> -->
-    <h2 id="project-heading-title" class="projects-header section-header-white">PROJECTS</h2>
-     <div style="color: white;" class="slogan">Click the included buttons to view my recent work.</div>
+<div id="project-head-row" class="row text-center">
+<div style="margin-top:10px;" class"show-for-small-only"></div>
+    <div style="margin-bottom: 10px;" class="white-box-outer">
+    <div  class="white-box">
+    <h2 style="color: #222;" id="project-heading-title" class="projects-header section-header">PROJECTS</h2>
+      <div style="color: #222;" class="slogan no-margin">Flip through my recent work.</div>
+    </div>
+    </div>
 </div>
 
 <div class="row">  
   <div class="project-slider">
 
-    <div id="Road-Warrior-v2">
-      <div style="text-align: center; float: right;" class="columns small-12 large-6 medium-6">
-        <h3>Road Warrior</h3>
-        <p>
-          My goal was to create a tour-management app that, unlike the industry-standard solution, integrates better into a user's everyday life. Originally built with jQuery and Node.js and rebuilt with AngularJS/Ionic/Cordova/Firebase, this app interacts with Yelp, Google Places, and Yahoo Weather to present recommended locations close to a venue and weather forecasts. Rebuild also features realtime database interaction, offline functionality, multi-group support, and group chat. 
-        </p>
+    <div class="single-project-slide" id="Road-Warrior-v2">
+      <div class="single-project-text columns small-12 large-6 medium-12">
+     
+        <object class="project-name-header" data="./img/road-warrior.svg"></object>
+           <div class="tech-icon-row">
+        <div class="tech-icon-header">Technology Used:</div>
+        <img class="tech-icon" src="./img/icons/angularjs.svg">
+        <img class="tech-icon" src="./img/icons/ionic.svg">
+        <img class="tech-icon" src="./img/icons/cordova.svg">
+        <img class="tech-icon" src="./img/icons/firebase.svg">
+        <img class="tech-icon" src="./img/icons/html5.svg">
+        <img class="tech-icon" src="./img/icons/css3.svg">
+        <img class="tech-icon" src="./img/icons/js.svg">
       </div>
-      <div style="float: left" id="desktop-preview" class="columns small-12 medium-6 large-6 ">
-        <div id="demo-wrapper">
-          <div id="big-iphone-container">
+        <p>
+          My goal was to create a tour-management app that, unlike the industry-standard solution, integrates better into a user's everyday life. Built with AngularJS and Ionic as a hybrid iPhone/Android app, Road Warrior interacts with Yelp, Google Places, and Yahoo Weather to present recommended locations close to a venue and weather forecasts. Also features realtime database interaction, offline functionality, multi-group support, and group chat. 
+        </p>
+        <div class="buttons-row">
+        <button class="button-primary button-small button-rounded">Github</button>  
+       <button class="button-primary button-small button-rounded">Demo</button> 
+        </div>
+     
+      </div>
+      <div class="single-project-img columns small-12 medium-12 large-6 ">
+        <div class="demo-wrapper">
+          <div class="big-iphone-container">
             <img src="./img/iphone-spacer.png" style="visibility: hidden;" />
           </div>
-         <!--  <img id="road-warrior-mobile" class="big-mobile-img" src="./img/road-warrior-mobile.png" alt="road-warrior-mobile"/> -->
         </div>
       </div>
 
@@ -118,27 +136,58 @@
 
 
     </div>
-    <div id="sisters-site">
-      <div style="text-align: center; float: right;" class="columns small-12 large-6 medium-6">
-        <h2>Sisters Site</h2>
+    <div class="single-project-slide" id="sisters-site">
+      <div style="text-align: center; float: right;" class="single-project-text columns small-12 large-6 medium-12">
+        
+        <object class="project-name-header" data="./img/SISTERS.svg"></object>
+           <div class="tech-icon-row">
+        <div class="tech-icon-header">Technology Used:</div>
+        <img class="tech-icon" src="./img/icons/angularjs.svg">
+        <img class="tech-icon" src="./img/icons/express.svg">
+        <img class="tech-icon" src="./img/icons/node.svg">
+        <img class="tech-icon" src="./img/icons/firebase.svg">
+        <img class="tech-icon" src="./img/icons/html5.svg">
+        <img class="tech-icon" src="./img/icons/css3.svg">
+        <img class="tech-icon" src="./img/icons/js.svg">
       </div>
-      <div style="float: left" id="desktop-preview" class="columns small-12 medium-6 large-6 ">
-        <div id="demo-wrapper">
-          <div id="imac-container"> 
-            <img src="./img/imac-spacer.png" />
+        <p>
+          This is a site for a cool band. 
+        </p>
+        <div class="buttons-row">
+        <button class="button-primary button-small button-rounded">Github</button>  
+       <button class="button-primary button-small button-rounded">Demo</button> 
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div style="float: left" class="single-project-img columns small-12 medium-12 large-6 ">
+        <div class="demo-wrapper">
+          <div class="imac-container"> 
+            <img src="./img/imac-spacer.png" style="visibility: hidden;"/>
           </div>
-        <div id="iphone-container">
-          <img src="./img/iphone-spacer.png" />
+        <div class="iphone-container">
+          <img src="./img/iphone-spacer.png" style="visibility: hidden;"/>
         </div>
         </div>
       </div>
     </div>
-    <div id="portfolio">
+  <!--   <div id="portfolio">
        <div style="text-align: center; float: right;" class="columns small-12 large-6 medium-6">
         <h2>Portfolio</h2>
       </div>
       <div style="float: left" id="desktop-preview" class="columns small-12 medium-6 large-6 ">
-        <div id="demo-wrapper">
+        <div class="demo-wrapper">
           <div id="imac-container"> 
             <img src="./img/imac-spacer.png" />
           </div>
@@ -149,13 +198,13 @@
       </div>
 
 
-    </div>
-    <div id="Study-Time">
+    </div> -->
+   <!--  <div class="single-project-slide" id="Study-Time">
         <div style="text-align: center; float: right;" class="columns small-12 large-6 medium-6">
         <h2>Study Time</h2>
       </div>
       <div style="float: left" id="desktop-preview" class="columns small-12 medium-6 large-6 ">
-        <div id="demo-wrapper">
+        <div class="demo-wrapper">
           <div id="imac-container"> 
             <img src="./img/imac-spacer.png" />
           </div>
@@ -166,27 +215,26 @@
       </div>
 
 
-    </div>
-    <div id="Road-Warrior-v1">
+    </div> -->
+ <!--    <div class="single-project-slide" id="Road-Warrior-v1">
         <div style="text-align: center; float: right;" class="columns small-12 large-6 medium-6">
         <h2>Info about Road Warrior v1</h2>
       </div>
       <div style="float: left" id="desktop-preview" class="columns small-12 medium-6 large-6 ">
-        <div id="demo-wrapper">
+        <div class="demo-wrapper">
           <div id="big-iphone-container">
             <img src="./img/iphone-spacer.png" style="visibility: hidden;" />
           </div>
-         <!--  <img id="road-warrior-mobile" class="big-mobile-img" src="./img/road-warrior-mobile.png" alt="road-warrior-mobile"/> -->
         </div>
       </div>
 
-    </div>
-    <div id="Homeventory">
+    </div> -->
+<!--     <div class="single-project-slide" id="Homeventory">
         <div style="text-align: center; float: right;" class="columns small-12 large-6 medium-6">
         <h2>Homeventory</h2>
       </div>
       <div style="float: left" id="desktop-preview" class="columns small-12 medium-6 large-6 ">
-        <div id="demo-wrapper">
+        <div class="demo-wrapper">
           <div id="imac-container"> 
             <img src="./img/imac-spacer.png" />
           </div>
@@ -196,13 +244,13 @@
         </div>
       </div>
 
-    </div>
-    <div id="Connect-Four">
+    </div> -->
+<!--     <div class="single-project-slide" id="Connect-Four">
          <div style="text-align: center; float: right;" class="columns small-12 large-6 medium-6">
         <h2>Connect Four</h2>
       </div>
       <div style="float: left" id="desktop-preview" class="columns small-12 medium-6 large-6 ">
-        <div id="demo-wrapper">
+        <div class="demo-wrapper">
           <div id="imac-container"> 
             <img src="./img/imac-spacer.png" />
           </div>
@@ -213,7 +261,7 @@
       </div>
 
 
-    </div>
+    </div> -->
   </div>
 
 
