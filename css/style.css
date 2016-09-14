@@ -51,7 +51,7 @@ h1 {
 
 .white-box {
   background-color: white;
-  padding: 10px;
+  padding: 2px 10px;
   display: inline-block;
   border: 1px solid #222;
 }
@@ -76,17 +76,19 @@ h1 {
 
 
 .title-bar {
-  position: fixed;
-  width: 115px;
-  z-index: 200;
-  background: rgba(0, 0, 0, .8);
-  padding: .7rem; }
+    position: fixed;
+    width: 100px;
+    z-index: 200;
+    background: rgba(0, 0, 0, .8);
+    padding: .8rem .5rem;
+}
 
 .top-bar {
     z-index: 202;
-    top: 48px;
-    width: 115px;
+    top: 52px;
+    width: 100px;
     position: fixed;
+    padding: .5rem .1rem;
     background: rgba(0, 0, 0, .8); }
   .top-bar ul {
     background: transparent; }
@@ -356,18 +358,13 @@ background-color: white;
   background-color: #c0cedc;
 }
 
-
 .projects-header {
   margin-top: 0px;
 }
 
-
-
-
 .project-name-header {
   display: inline-block;
   margin: 0 auto 5px auto;
-  width: 65%;
   vertical-align: bottom;
 }
 
@@ -375,9 +372,9 @@ background-color: white;
     display: inline-block;
     font-family: "Arvo", sans-serif;
     font-weight: 500;
-    margin-bottom: 4px;
+    margin-bottom: 3px;
     margin-left: 5px;
-    font-size: 1.3em;
+    font-size: 1.5em;
 }
 
 #projects-mini-nav{
@@ -398,23 +395,15 @@ background-color: white;
   
 }
 
-
-
 .projects-text p {
   text-align: justify;
   font-size:12px;
   margin-bottom: 3px;
 }
 
-/*#imac {
-  position: absolute;
-  bottom: -480px;
-  left: 0px;
-}*/
-
 .imac-container {
   position: relative;
-  width: 90%;
+  width: 100%;
   height: 100%;
   margin: 0 auto;
 }
@@ -424,25 +413,30 @@ background-color: white;
  background-size: contain;
 }
 
-
-
-.iphone-container {
-  z-index: 5;
-  position: relative;
-  width: 16%;
-  height: 100%;
-  max-width: 63.59px;
+.imac-container.portfolio {
+ background: url("../img/portfolio.png") no-repeat center bottom; 
+ background-size: contain;
 }
 
+.imac-container.study-time {
+ background: url("../img/studytime-mac.png") no-repeat center bottom; 
+ background-size: contain;
+}
 
+.imac-container.homeventory {
+ background: url("../img/homeventory-mac.png") no-repeat center bottom; 
+ background-size: contain;
+}
 
-
-
+.imac-container.connect-four {
+ background: url("../img/connectfour-mac.png") no-repeat center bottom; 
+ background-size: contain;
+}
 
 .big-iphone-container {
     position: relative;
     z-index: 5;
-    width: 32%;
+    width: 37%;
     height: 100%;
     margin: 0 auto;    
 }
@@ -461,6 +455,11 @@ background-color: white;
   position: relative;
 }
 
+.portfolio-project-header {
+  font-size: 1.9em;
+  font-family: 'Bowlby One SC', sans-serif;
+}
+
 .demo-wrapper {
   position: absolute;
   left: 0;
@@ -476,124 +475,6 @@ background-color: white;
   float: left;
 }
 
-#connect-four-text-body {
-  display: none;
-  height: 185px;
-}
-
-#studytime-text-body {
-  display: none;
-  height: 180px;
-}
-
-#homeventory-text-body  {
-  display: none;
-  height: 205px;
-}
-
-#road-warrior-text-body {
-  height: 265px;
-} 
-
-.desktop-img {
-  position: absolute;
-  bottom: -450px;
-  left: 0px;
-}
-
-.mobile-img {
-  position: absolute;
-  bottom: -521px;
-  left: 140%;
-  width: 16%;
-  max-height: 128.66px;
-  max-width: 63.59px;
-}
-
-.big-mobile-img {
-  width: 33%;
-  position: absolute;
-  bottom: -467px;
-  left: 33%;
-}
-
-#homeventory-desktop {
-  display: none;
-}
-
-#connect-four-desktop {
-  display: none;
-}
-
-#studytime-desktop {
-  display:none;
-}
-
-#studytime-mobile {
-  display:none;
-  z-index: 14;
-}
-
-#homeventory-mobile {
-  z-index: 15;
-  display: none;
-}
-
-#connect-four-mobile {
-  z-index: 16;
-  display: none;
-}
-
-#road-warrior-mobile {
-  z-index: 17;
-
-}
-
-#iphone-lock-screen {
-  z-index: 18;
-}
-
-#screensaver {
-    position: absolute;
-    width: 90%;
-    max-width: 95%;
-    margin-top: 48%;
-    left: 16px;
-}
-
-.project-svg-header {
-/*  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.29);*/
-  margin:0 auto 15px auto;
-  display: block;
-}
-
-#project-intro-box {
-  position: relative;
-  width: 100%;
-}
-
-#arrow {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  width: 50px;
-}
-
-#intro-text {
-    font-size: 18px;
-    font-family: "Arvo";
-  /*  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.19);*/
-    color: white;
-    position: absolute;
-    top: 90px;
-    left: 50px;
-}
-
-.dropdown-complete {
-  margin-top: 3px;
-    bottom: 20%;
-    height: 60%;
-}
 
 .tech-icon-header {
     color: #222222;
@@ -624,90 +505,10 @@ background-color: white;
   margin-right: 3px;
 }
 
-.project-link {
-  display: inline-block;
-  width: 95px;
-  padding: 5px;
-  line-height: 16px;
-}
-
-.project-links-group {
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
-.project-link:visited {
-    color: #333333; }
-  .project-link:hover {
-    color: #bbbbbb;
-    background-color: #d6d6d6;
-    text-decoration: none;
-    outline: none; }
-  .project-link:active, .project-link:focus, .project-link.active, .project-link.is-active {
-    text-decoration: none;
-    background-color: #bbbbbb;
-    border-color: #cfcfcf;
-    color: #333333;
-    -webkit-transition-duration: 0s;
-            transition-duration: 0s;
- }
-
-.icon-in-btn {
-  width: 20px;
-  vertical-align: center;
-  padding-bottom: 4px;
-  padding-right: 3px;
-}
-
-
-.arrowflash {
-  -moz-animation: arrowflash 1s ease-out;
-  -moz-animation-iteration-count: 1000;
-
-  -webkit-animation: arrowflash 1s ease-out;
-  -webkit-animation-iteration-count: 1000;
-
-  -ms-animation: arrowflash 1s ease-out;
-  -ms-animation-iteration-count: 1000;
-}
-
-@-webkit-keyframes arrowflash {
-    0% { opacity:1; }
-    50% { opacity:.2; }
-    100% { opacity:1; }
-}
-
-@-moz-keyframes arrowflash {
-    0% { opacity:1; }
-    50% { opacity:.2; }
-    100% { opacity:1; }
-}
-
-@-ms-keyframes arrowflash {
-     0% { opacity:1; }
-    50% { opacity:.2; }
-    100% { opacity:1; }
-}
-
-
-.project-btn {
-  width: 25%;
-  font-size: 9px;
-  font-weight: 800;
-  font-family: 'Arvo';
-  padding-left: 0px !important;
-  padding-right: 0px !important;
-}
-
-
-
-
-
 
 #contact-section {
   background: url("../img/grey.png");
 }
-
 
 .contact-row {
   text-align: center;
@@ -724,16 +525,9 @@ background-color: white;
     font-size: 48px;
 }
 
-
-
 .contact-buttons {
   display: inline-block;
   background-color: #147CC0;
-  /*background-image: -webkit-gradient(linear, left top, left bottom, from(#f7f7f7), to(#e7e7e7));
-  background-image: -webkit-linear-gradient(top, #f7f7f7, #e7e7e7); 
-  background-image: -moz-linear-gradient(top, #f7f7f7, #e7e7e7); 
-  background-image: -ms-linear-gradient(top, #f7f7f7, #e7e7e7); 
-  background-image: -o-linear-gradient(top, #f7f7f7, #e7e7e7); */
   color: #ffffff;
   margin: 8px;
   width: 90px;
@@ -744,7 +538,6 @@ background-color: white;
   border-radius:50%;
  
 }
-
 
 .contact-buttons:hover{
   text-decoration: none;
@@ -764,72 +557,6 @@ background-color: white;
 
 
 
-.projects-text {
-  position: relative;
-  top: -15px;
-  left: 0px;
-  margin: 0px auto 0px auto;
-  padding: 8px 18px 6px 18px;
-  width: 99%;
-  /*background-color: white;*/
-  background-color: #E4E4E4;
-  border-radius: 0px;
-  
-}
-.projects-text p {
-  text-align: justify;
-  font-size:13px;
-  margin-bottom: 3px;
-}
-.big-mobile-img {
-  bottom: -507px;
-}
-
-
-
-
-
-.desktop-img {
-  bottom: -490px;
-}
-
-#arrow {
-  position: absolute;
-  left: 30px;
-  width: 70px;
-}
-
-#intro-text {
-  top: 128px;
-  left: 86px;
-}
-
-.project-btn {
-  font-size: 10px;
-} 
- 
- #connect-four-text-body {
-  display: none;
-  height: 185px;
-}
-
-#studytime-text-body {
-  height: 190px;
-}
-
-#homeventory-text-body  {
-  display: none;
-  height: 200px;
-}
-
-
-
-#road-warrior-text-body {
-  display: none;
-  height: 255px;
-} 
-
-
 }
 
 
@@ -842,8 +569,6 @@ h2 {
 a.anchor {
   top: -100px;
 }
-
-
 
 .slogan {
   font-size: 1.1em;
@@ -1016,27 +741,6 @@ a.active {
   font-size: 15.5px;
 }
 
-
-
-
-
-#projects-mini-nav{
-  width: inherit;
-  text-align: right;
-}
-
-.dropdown-complete {
-    margin-top: 0px;
-    width: 95%;
-    position: absolute;
-    bottom: 23%;
-    height: 60%;
-}
-
-#arrow {
-  top: 30px;
-  left: 40px;
-}
 
 #intro-text {
   font-size: 30px;

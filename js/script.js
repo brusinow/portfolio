@@ -143,9 +143,9 @@ $(document).ready(function() {
         $("#about-section").height(bodyheight+300);  
         $("#projects-section").height(bodyheight-30); 
         $("#contact-section").height(bodyheight+40);
-        $(".project-slider").height(bodyheight-170);
-        $(".demo-wrapper").height(bodyheight-170);
-        $(".single-project-text").height(bodyheight-170);
+        $(".project-slider").height(bodyheight-150);
+        $(".demo-wrapper").height(bodyheight-150);
+        $(".single-project-text").height(bodyheight-150);
         } else {
         $(".content-section").height(bodyheight-120);
         $(".project-slider").height(bodyheight-300);
