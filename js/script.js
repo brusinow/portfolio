@@ -24,10 +24,7 @@ $(document).ready(function() {
   $("#phrase-2").delay(3700).fadeIn(1000);
 });
 
-// $(document).ready(function(){
-//   $("#studytime-text-body, #homeventory-text-body, #road-warrior-text-body, #connect-four-text-body").show();
-//   $("#homeventory-text-body, #studytime-text-body, #connect-four-text-body").delay(800).fadeOut();
-// });
+
 
 
 function scrollDown(currentTop){
@@ -132,12 +129,12 @@ $(document).ready(function() {
         var bodyheight = $(this).height();
         width = $(this).width();
         if (width <= 321){
-        $("#about-section").height(bodyheight+450);
-        $("#projects-section").height(bodyheight+40); 
-        $("#contact-section").height(bodyheight+20); 
-        $(".project-slider").height(bodyheight-140);
-        $(".demo-wrapper").height(bodyheight-140); 
-        $(".single-project-text").height(bodyheight-140);   
+        $("#about-section").height(bodyheight+241);
+        $("#projects-section").height(bodyheight-30); 
+        $("#contact-section").height(bodyheight-25); 
+        $(".project-slider").height(bodyheight-115);
+        $(".demo-wrapper").height(bodyheight-110); 
+        $(".single-project-text").height(bodyheight-115);   
         }
         else if (width > 321 && width <= 640){
         $("#about-section").height(bodyheight+300);  

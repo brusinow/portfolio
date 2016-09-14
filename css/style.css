@@ -12,9 +12,10 @@ p {
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 1.3rem;
   text-align: center;
-  margin-bottom: 0px;
+  margin-bottom: 20px;
+  text-decoration: underline;
 }
 
 h1 {
@@ -23,7 +24,11 @@ h1 {
   margin-bottom: 0px;
 }
 
-
+.welcome-text {
+  width: 100%;
+  height: 100%;
+  display: table;
+}
 
 .project-buttons {
   font-size: 14px;
@@ -42,7 +47,7 @@ h1 {
 }
 
 .project-slider p{
-  font-size: .8em;
+  font-size: .7em;
   color: #000;
   text-align: justify;
   margin-bottom: 10px;
@@ -60,6 +65,7 @@ h1 {
   background-color: white;
   padding: 6px;
   display: inline-block;
+  margin-bottom:15px;
 }
 
 .no-margin {
@@ -184,7 +190,7 @@ background-color: white;
     display: none;
     position: absolute;
     width: 100%;
-    top: 232px;
+    top: 210px;
     text-align: center;
     color: white;
     font-size: 42px;
@@ -198,18 +204,18 @@ background-color: white;
   width: 100%;
   text-align: center;
   color: white;
-  font-size: 16px;
+  font-size: 14px;
   font-family: "Arvo";
   font-weight:300;
 }
 
 #phrase-1 {
-  top: 316px;
+  top: 295px;
   display: none;
 }
 
 #phrase-2 {
-  top: 338px;
+  top: 315px;
   display: none;
 }
 
@@ -268,7 +274,6 @@ background-color: white;
 }
 
 #about-left {
-  height: 50%;
   background-color: white;
   float: left;
   margin:0;
@@ -276,7 +281,7 @@ background-color: white;
 }
 
 #about-right {
-  height: 50%;
+  height: 370px;
   background: url("../img/brentaboutbg.jpg") left top;
   background-size: cover;
   background-repeat: no-repeat;
@@ -342,7 +347,7 @@ background-color: white;
 }
 
 #about-text p {
-  font-size: .9em;
+  font-size: .8em;
   text-align: justify;
   margin-bottom: 5px;
 }
@@ -493,19 +498,6 @@ background-color: white;
   margin-bottom: 5px;
 }
 
-.icon-in-button {
-  margin-bottom: 4px;
-}
-
-.github-icon {
-  background: url("../img/icons.github.svg") no-repeat contain;
-  display: inline-block;
-  height: 12px;
-  width: 12px;
-  margin-right: 3px;
-}
-
-
 #contact-section {
   background: url("../img/grey.png");
 }
@@ -553,220 +545,94 @@ background-color: white;
 }
 
 
+/*IPHONE 6 MEDIA QUERY!!!*/
+
 @media (min-width: 321px) {
-
-
-
-}
-
-
-
-@media (min-width: 641px) {
-h2 {
-  font-size: 3rem;
-}
-
-a.anchor {
-  top: -100px;
-}
-
-.slogan {
-  font-size: 1.1em;
-}
-
-.contact-icons {
-  font-size: 100px;
-}
-
-.contact-buttons {
-  width: 180px;
-  height: 180px;
-  line-height: 180px;
-}
-
-#about-right {
-    height: 54%;
-    background: url("../img/brentaboutbg.jpg") left top;
-    background-size: cover;
-    background-repeat: no-repeat;
-    float: left;
-    margin: 0;
-    padding: 0;
-}
-
-.not-scrolled {
-  transition: background-color 0.5s ease;
-  background-color: rgba(0, 0, 0, 0);
-}
-
-.scrolled {
-  transition: background-color 0.5s ease;
-  background-color: rgba(0, 0, 0, .9);
-}
-
-.menu {
-  display:none;
-  width: 704px;
+  h2 {
+  font-size: 2rem;
   text-align: center;
-  margin: 0 auto;
+  margin-bottom: 0px;
+  }
+
+.project-buttons {
+  font-size: 14px;
+  color: #222;
+  font-weight: 400;
 }
 
-.menu > li > a {
-    display: block;
-    padding: 0.7rem 2rem;
-    line-height: 1;
+.project-slider {
+  width: 90%;
+  margin: 0 5%;
 }
 
-.top-bar {
-  top: 0px;
-}
-.title-bar {
-  z-index:200;
-  background-color: black;
- position: fixed;
-  padding: 0.9rem;
- }
-
-#main-menu {
-  position: fixed;
-  padding: 1.7rem;
-  z-index: 4000; 
-  width: 100%;
+.project-slider.slider-header {
+  color: white;
+  font-size: 1.4em;
 }
 
-#main-menu ul {
-  background: transparent;
-}
-  
-#main-menu ul li {
-  background-color: rgba(0, 0, 0, 0);
-}
-
-#main-menu ul li a {
-  color: #fff; }
-
-a.main-link {
-  background-color: rgba(0, 0, 0, 0);
-  border-bottom: 2px solid rgba(0, 0, 0, 0);
-  font-size: 22px;
-  font-weight: 500;
-  font-family: 'Oswald', sans-serif;
- /* text-shadow: 2px 2px 4px #222222;*/
-    -o-transition:.5s;
-  -ms-transition:.5s;
-  -moz-transition:.5s;
-  -webkit-transition:.5s;
-  /* ...and now for the proper property */
-  transition:.5s;
-}
-
-a.main-link:hover {
-  color: rgba(255, 255, 255, .7);
- /* text-shadow: 2px 2px 7px #222222;*/
-  border-bottom: 2px solid rgba(255, 255, 255, .5);
-}
-
-a.active {
-  border-bottom: 2px solid white !important;
-}
-
-.spacer { 
-  height: 150px;
-}
-
-.typebox {
-  font-size: 36px;
+.project-slider p{
+  font-size: .8em;
+  color: #000;
+  text-align: justify;
+  margin-bottom: 10px;
 
 }
 
-#namebox {
-    top: 400px;
-    font-size: 72px;
-}
-
-#phrase-1 {
-    top: 465px;
-}
-
-#phrase-2 {
-    top: 510px;
-}
-
-#about-row {
-  height: 45%;
-}
-
-.about-img-panel {
-    height: 90%;
-    width: 48%;
-    text-align: center;
-    background-color: white;
-    
-    padding: 10px;
-    margin: 1%;
-}
-
-
-
-.header-panel {
-  display: inline-block;
+.white-box {
   background-color: white;
-  border-radius: 0px;
-  
-  margin: 10px auto 15px auto;
-  padding: 0 14px;
+  padding: 2px 10px;
+  display: inline-block;
+  border: 1px solid #222;
+  font-size: 1.3rem;
+  text-align: center;
+}
+
+.white-box-outer {
+  background-color: white;
+  padding: 6px;
+  display: inline-block;
+  margin-bottom:30px;
 }
 
 
-#about-text-container{
-  margin-top:0px;
-  padding:0px;
-  height:100%;
 
+  #projects-section {
+  /*background-color: #0E3F6B;*/
+  /*background-color: #3e6588;*/
+  background-color: #c0cedc;
 }
 
-
-
-#about-text {
-    /* width: 98%; */
-    margin: 1% auto;
-    position: relative;
-    background-color: white;
-    border-radius: 0px;
-    padding: 16px 34px;
+.projects-header {
+  margin-top: 0px;
 }
 
-
-#about-text p {
-  font-size: 15.5px;
+.project-name-header {
+  display: inline-block;
+  margin: 0 auto 5px auto;
+  vertical-align: bottom;
 }
 
-
-#intro-text {
-  font-size: 30px;
-  top: 142px;
-  left: 92px;
+.version-text {
+    display: inline-block;
+    font-family: "Arvo", sans-serif;
+    font-weight: 500;
+    margin-bottom: 3px;
+    margin-left: 5px;
+    font-size: 1.5em;
 }
 
-
-.desktop-img {
-  position: absolute;
-  bottom: -520px;
-  left: 50%;
+#projects-mini-nav{
   width: 100%;
-  max-height: 319.52px;
-  max-width: 397.5px;
+  
 }
-
 
 .projects-text {
-  overflow: hidden;
   position: relative;
   top: -15px;
-  left: 2px;
-  margin: 0px auto 1rem auto;
-  padding: 18px;
-  width: 94.5%;
+  left: .5px;
+  margin: 0px auto 0px auto;
+  padding: 8px 18px 6px 18px;
+  width: 99.2%;
   /*background-color: white;*/
   background-color: #dddddd;
   border-radius: 0px;
@@ -775,139 +641,332 @@ a.active {
 
 .projects-text p {
   text-align: justify;
-  font-size:1em;
+  font-size:12px;
+  margin-bottom: 3px;
+}
+
+.imac-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.imac-container.sisters {
+ background: url("../img/sisters-mac.png") no-repeat center bottom; 
+ background-size: contain;
+}
+
+.imac-container.portfolio {
+ background: url("../img/portfolio.png") no-repeat center bottom; 
+ background-size: contain;
+}
+
+.imac-container.study-time {
+ background: url("../img/studytime-mac.png") no-repeat center bottom; 
+ background-size: contain;
+}
+
+.imac-container.homeventory {
+ background: url("../img/homeventory-mac.png") no-repeat center bottom; 
+ background-size: contain;
+}
+
+.imac-container.connect-four {
+ background: url("../img/connectfour-mac.png") no-repeat center bottom; 
+ background-size: contain;
+}
+
+.big-iphone-container {
+    position: relative;
+    z-index: 5;
+    width: 37%;
+    height: 100%;
+    margin: 0 auto;    
+}
+
+.big-iphone-container.roadwarrior-v2 {
+  background: url("../img/road-warrior-v2.png") no-repeat center bottom;
+  background-size: contain;
+}
+
+.big-iphone-container.roadwarrior-v1 {
+  background: url("../img/road-warrior-v1.png") no-repeat center bottom;
+  background-size: contain;
+}
+
+.single-project-slide {
+  position: relative;
+}
+
+.portfolio-project-header {
+  font-size: 1.9em;
+  font-family: 'Bowlby One SC', sans-serif;
+}
+
+.demo-wrapper {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.single-project-text {
+  text-align: center; 
+  float: right;
+}
+
+.single-project-img {
+  float: left;
+}
+
+
+.tech-icon-header {
+    color: #222222;
+    font-size: 12px;
+    font-family: "Arvo";
+    font-weight: 600;
+}
+
+.tech-icon {
+  display: inline-block;
+  width: 18px;
+  margin: 1px;
+}
+
+.tech-icon-row {
   margin-bottom: 5px;
 }
 
-#project-heading-title {
-  position: relative;
-  top: 0px;
-}
-
-
-
-.tech-icon {
-    width: 20px;
-    margin: 1px;
-}
-
-.tech-icon-header{
-  margin-bottom: 2px;
-}
 
 
 
 
 
 
-  
-
-
-.project-btn {
-  width: 25%;
-  font-size: 14px;
-  font-weight: 800;
-  font-family: 'Arvo';
-  padding-left: 0px !important;
-  padding-right: 0px !important;
-}
-
-
-.project-link {
-  width: 105px;
-  padding: 10px;
-}
-
-
-
-#connect-four-text-body {
-  display: none;
-  height: 200px;
-}
-
-#homeventory-text-body  {
-  display: none;
-  height: 235px;
-}
-
-#studytime-text-body {
-  height: 225px;
-}
-
-#road-warrior-text-body {
-  display: none;
-  height: 285px;
-} 
 
 
 
 
-.big-mobile-img {
-  width: 130px;
-  bottom: -542px;
-  left: 85%;
+
+
 }
 
 
 
 
+
+
+
+
+@media (min-width: 641px) {
+  h2 {
+    font-size: 3rem;
+  }
+
+  a.anchor {
+    top: -100px;
+  }
+
+  .slogan {
+    font-size: 1.1em;
+  }
+
+  .contact-icons {
+    font-size: 100px;
+  }
+
+  .contact-buttons {
+    width: 180px;
+    height: 180px;
+    line-height: 180px;
+  }
+
+  #about-right {
+      height: 54%;
+      background: url("../img/brentaboutbg.jpg") left top;
+      background-size: cover;
+      background-repeat: no-repeat;
+      float: left;
+      margin: 0;
+      padding: 0;
+  }
+
+  .not-scrolled {
+    transition: background-color 0.5s ease;
+    background-color: rgba(0, 0, 0, 0);
+  }
+
+  .scrolled {
+    transition: background-color 0.5s ease;
+    background-color: rgba(0, 0, 0, .9);
+  }
+
+  .menu {
+    display:none;
+    width: 704px;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .menu > li > a {
+      display: block;
+      padding: 0.7rem 2rem;
+      line-height: 1;
+  }
+
+  .top-bar {
+    top: 0px;
+  }
+  .title-bar {
+    z-index:200;
+    background-color: black;
+   position: fixed;
+    padding: 0.9rem;
+   }
+
+  #main-menu {
+    position: fixed;
+    padding: 1.7rem;
+    z-index: 4000; 
+    width: 100%;
+  }
+
+  #main-menu ul {
+    background: transparent;
+  }
+    
+  #main-menu ul li {
+    background-color: rgba(0, 0, 0, 0);
+  }
+
+  #main-menu ul li a {
+    color: #fff; }
+
+  a.main-link {
+    background-color: rgba(0, 0, 0, 0);
+    border-bottom: 2px solid rgba(0, 0, 0, 0);
+    font-size: 22px;
+    font-weight: 500;
+    font-family: 'Oswald', sans-serif;
+   /* text-shadow: 2px 2px 4px #222222;*/
+      -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    /* ...and now for the proper property */
+    transition:.5s;
+  }
+
+  a.main-link:hover {
+    color: rgba(255, 255, 255, .7);
+   /* text-shadow: 2px 2px 7px #222222;*/
+    border-bottom: 2px solid rgba(255, 255, 255, .5);
+  }
+
+  a.active {
+    border-bottom: 2px solid white !important;
+  }
+
+  .spacer { 
+    height: 150px;
+  }
+
+  .typebox {
+    font-size: 36px;
+
+  }
+
+  #namebox {
+      top: 400px;
+      font-size: 72px;
+  }
+
+  #phrase-1 {
+      top: 465px;
+  }
+
+  #phrase-2 {
+      top: 510px;
+  }
+
+  #about-row {
+    height: 45%;
+  }
+
+  .about-img-panel {
+      height: 90%;
+      width: 48%;
+      text-align: center;
+      background-color: white;
+      
+      padding: 10px;
+      margin: 1%;
+  }
+
+
+
+  .header-panel {
+    display: inline-block;
+    background-color: white;
+    border-radius: 0px;
+    
+    margin: 10px auto 15px auto;
+    padding: 0 14px;
+  }
+
+
+  #about-text-container{
+    margin-top:0px;
+    padding:0px;
+    height:100%;
+
+  }
+
+
+
+  #about-text {
+      /* width: 98%; */
+      margin: 1% auto;
+      position: relative;
+      background-color: white;
+      border-radius: 0px;
+      padding: 16px 34px;
+  }
+
+
+  #about-text p {
+    font-size: 15.5px;
+  }
+
+  .projects-text p {
+    text-align: justify;
+    font-size:1em;
+    margin-bottom: 5px;
+  }
+
+  .tech-icon {
+      width: 20px;
+      margin: 1px;
+  }
+
+  .tech-icon-header{
+    margin-bottom: 2px;
+  }
 
 }
 
 @media (min-width: 641px) and ( max-height: 800px ){
   #about-row {
   height: 40%;
-}
+  }
 }
 
 
 
 @media (min-width: 641px) and ( min-height: 900px ) and ( max-height: 1025px ){
-#about-text p {
+  #about-text p {
     font-size: 13.5pt;
-}
-
-
-#screensaver {
-    position: absolute;
-    width: 90%;
-    max-width: 95%;
-    margin-top: 48%;
-    left: 26px;
-}
-
-#road-warrior-text-body {
-    display: none;
-    height: 310px;
-}
-
-.big-mobile-img {
-    width: 160px;
-    bottom: -702px;
-    left: 80%;
-}
-
-
-
-.desktop-img {
-    position: absolute;
-    bottom: -700px;
-    left: 25%;
-    width: 150%;
-    max-height: none;
-    max-width: none;
-}
-
-.mobile-img {
-    position: absolute;
-    bottom: -697px;
-    left: 160%;
-    width: 26%;
-    max-height: none;
-    max-width: none;
-}
-
-
+  }
 }
 
 
@@ -966,19 +1025,7 @@ a.active {
   padding:0;
 }
 
-  #projects-mini-nav{
-  width: 100%;
-  text-align: center;
-  }
 
-  .dropdown-complete {
-  margin-top: 0px;
-  position: absolute;
-  right: 5%;
-  bottom: 8%;
-  height: 60%;
-  width: 41.66667%;
-}
 
   #about-row {
   height: 500px;
@@ -1012,66 +1059,9 @@ a.active {
   background-color: transparent;
   border-radius: 0px;
   padding: 16px 24px;
-}
-
-
-
-
-#screensaver {
-    left: 28px;
-}
-
-.mobile-img {
-  width: 15.5%;
-  position: absolute;
-  bottom: -430px;
-  left: 92%;
-   max-height: none;
-  max-width: none;
-}
-
-
-
-.big-mobile-img {
-  position: absolute;
-  width: 169px;
-  bottom: -522px;
-  left: 27%;
-  max-height: none;
-  max-width: none;
-}
-
-
-
-  .projects-text {
-  overflow: hidden;
-  position: relative;
-  top: -15px;
-  left: .5px;
-  margin: 0px auto 1rem auto;
-  padding: 18px;
-  width: 99.46%;
-  /* background-color: white; */
-  background-color: #dddddd;
-  border-radius: 0px;
-}
-
-  #studytime-text-body {
-  height: 225px;
   }
 
 
-  #homeventory-text-body {
-  height: 235px;
-  }
-
-  #road-warrior-text-body {
-  height: 325px;
-  }
-
-  #connect-four-text-body {
-  height: 225px;
-  }
 
  #about-text p {
     font-size: 1em;
@@ -1079,36 +1069,6 @@ a.active {
     text-align: justify;
     margin-bottom: 10px;
  
-}
-
-.desktop-img {
-  position: absolute;
-  width: 100%;
-  left: 0px;
-  max-height: none;
-  max-width: none;
-}
-
-.project-btn {
-  width: 25%;
-
-  font-size: 13px;
-  font-weight: 800;
-  font-family: 'Arvo';
-  padding-left: 0px !important;
-  padding-right: 0px !important;
-}
-
-#arrow {
-    top: 10px;
-    left: 60px;
-    width: 90px;
-}
-
-#intro-text {
-    font-size: 30px;
-    top: 152px;
-    left: 130px;
 }
 
 .tech-icon {
