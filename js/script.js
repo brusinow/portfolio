@@ -137,17 +137,17 @@ $(document).ready(function() {
         $(".single-project-text").height(bodyheight-115);   
         }
         else if (width > 321 && width <= 640){
-        $("#about-section").height(bodyheight+300);  
+        $("#about-section").height(bodyheight+208);  
         $("#projects-section").height(bodyheight-30); 
-        $("#contact-section").height(bodyheight+40);
+        $("#contact-section").height(bodyheight-25);
         $(".project-slider").height(bodyheight-150);
         $(".demo-wrapper").height(bodyheight-150);
         $(".single-project-text").height(bodyheight-150);
         } else {
         $(".content-section").height(bodyheight-120);
-        $(".project-slider").height(bodyheight-300);
-        $(".demo-wrapper").height(bodyheight-300);
-        $(".single-project-text").height(bodyheight-300);
+        $(".project-slider").height(bodyheight-260);
+        $(".demo-wrapper").height(bodyheight-260);
+        $(".single-project-text").height(bodyheight-250);
       }
     }).resize();
 });
