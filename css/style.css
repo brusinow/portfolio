@@ -14,7 +14,7 @@ p {
 h2 {
   font-size: 1.3rem;
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 h1 {
@@ -410,19 +410,20 @@ background-color: white;
   margin-bottom: 3px;
 }
 
- .small-iphone-spacer {
+/* .small-iphone-spacer {
     display: inherit;
-  }
+  }*/
 
-  .large-iphone-spacer {
+/*  .large-iphone-spacer {
     display: none;
-  }
+  }*/
 
 .imac-container {
   position: relative;
-  width: 100%;
+  width: 70%;
   height: 100%;
   margin: 0 auto;
+  z-index: -98;
 }
 
 .imac-container.sisters {
@@ -453,18 +454,19 @@ background-color: white;
 .big-iphone-container {
     position: relative;
     z-index: 5;
-    width: 37%;
+    width: 45%;
     height: 100%;
-    margin: 0 auto;    
-}
-
-.big-iphone-container.roadwarrior-v2 {
-  background: url("../img/road-warrior-v2.png") no-repeat center bottom;
-  background-size: contain;
+    margin: 0 auto; 
+    z-index: -99;   
 }
 
 .big-iphone-container.roadwarrior-v1 {
-  background: url("../img/road-warrior-v1.png") no-repeat center bottom;
+  background: url("../img/road-warrior-v1-double.png") no-repeat center bottom;
+  background-size: contain;
+}
+
+.big-iphone-container.roadwarrior-v2 {
+  background: url("../img/road-warrior-v2-double.png") no-repeat center bottom;
   background-size: contain;
 }
 
@@ -473,7 +475,7 @@ background-color: white;
 }
 
 .portfolio-project-header {
-  font-size: 1.9em;
+  font-size: 1.5em;
   font-family: 'Bowlby One SC', sans-serif;
 }
 
@@ -481,6 +483,7 @@ background-color: white;
   position: absolute;
   left: 0;
   top: 0;
+  z-index: -100;
 }
 
 .single-project-text {
@@ -495,7 +498,7 @@ background-color: white;
 
 .tech-icon-header {
     color: #222222;
-    font-size: 12px;
+    font-size: 10px;
     font-family: "Arvo";
     font-weight: 600;
 }
@@ -563,7 +566,6 @@ background-color: white;
   h2 {
   font-size: 2rem;
   margin-bottom: 20px;
-  margin-top: 20px;
   }
 
   .contact-buttons {
@@ -689,7 +691,7 @@ background-color: white;
 
 .imac-container {
   position: relative;
-  width: 100%;
+  width: 82%;
   height: 100%;
   margin: 0 auto;
 }
@@ -722,18 +724,18 @@ background-color: white;
 .big-iphone-container {
     position: relative;
     z-index: 5;
-    width: 37%;
+    width: 55%;
     height: 100%;
     margin: 0 auto;    
 }
 
-.big-iphone-container.roadwarrior-v2 {
-  background: url("../img/road-warrior-v2.png") no-repeat center bottom;
+.big-iphone-container.roadwarrior-v1 {
+  background: url("../img/road-warrior-v1-double.png") no-repeat center bottom;
   background-size: contain;
 }
 
-.big-iphone-container.roadwarrior-v1 {
-  background: url("../img/road-warrior-v1.png") no-repeat center bottom;
+.big-iphone-container.roadwarrior-v2 {
+  background: url("../img/road-warrior-v2-double.png") no-repeat center bottom;
   background-size: contain;
 }
 
@@ -828,13 +830,13 @@ background-color: white;
       top: 280px;
   }
 
-  .small-iphone-spacer {
+/*  .small-iphone-spacer {
     display: none;
   }
 
   .large-iphone-spacer {
     display: inherit;
-  }
+  }*/
 
   .big-iphone-container {
     position: relative;
@@ -1091,13 +1093,13 @@ background-color: white;
     top: 0;
   }
 
-  .small-iphone-spacer {
+/*  .small-iphone-spacer {
     display: none;
   }
 
   .large-iphone-spacer {
     display: inherit;
-  }
+  }*/
 
   .project-slider {
     width: 100%;
@@ -1132,6 +1134,7 @@ background-color: white;
 
   .imac-container {
   height: 90%;
+  width: 100%;
 }
 .big-iphone-container {
     height: 90%; 

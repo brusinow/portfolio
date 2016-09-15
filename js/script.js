@@ -21,22 +21,24 @@ $(document).ready(function() {
         var bodyheight = $(this).height();
         width = $(this).width();
         if (width <= 321){
-        $("#about-section").height(bodyheight+241);
-        $("#projects-section").height(bodyheight-30); 
+        $("#about-section").height(bodyheight+335);
+        $("#projects-section").height(bodyheight+30); 
         $("#contact-section").height(bodyheight-25); 
-        $(".project-slider").height(bodyheight-115);
-        $(".demo-wrapper").height(bodyheight-110); 
-        $(".single-project-text").height(bodyheight-115);   
+        $(".project-slider").height(bodyheight-85);
+        $(".demo-wrapper").height(bodyheight-85); 
+        $(".single-project-text").height(bodyheight-85);   
         }
         else if (width > 321 && width <= 640){
-        $("#about-section").height(bodyheight+208);  
-        $("#projects-section").height(bodyheight-30); 
-        $("#contact-section").height(bodyheight-25);
-        $(".project-slider").height(bodyheight-150);
-        $(".demo-wrapper").height(bodyheight-150);
-        $(".single-project-text").height(bodyheight-150);
+          console.log("iphone6 width!!!");
+        $("#about-section").height(bodyheight + 300);  
+        $("#projects-section").height(bodyheight+30); 
+        $("#contact-section").height(bodyheight+40);
+        $(".project-slider").height(bodyheight-115);
+        $(".demo-wrapper").height(bodyheight-115);
+        $(".single-project-text").height(bodyheight-115);
         } else if (width > 640 && width <= 1024){
-        $(".content-section").height(bodyheight-120);
+        $("#about-section").height(bodyheight); 
+        $(".content-section").height(bodyheight-90);
         $(".project-slider").height(bodyheight-260);
         $(".demo-wrapper").height(bodyheight-540);
         $(".single-project-text").height(bodyheight-250); 
