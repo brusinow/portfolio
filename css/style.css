@@ -400,6 +400,14 @@ background-color: white;
   margin-bottom: 3px;
 }
 
+ .small-iphone-spacer {
+    display: inherit;
+  }
+
+  .large-iphone-spacer {
+    display: none;
+  }
+
 .imac-container {
   position: relative;
   width: 100%;
@@ -1012,6 +1020,14 @@ background-color: white;
 
 
 @media (min-width: 1024px) {
+  .small-iphone-spacer {
+    display: none;
+  }
+
+  .large-iphone-spacer {
+    display: inherit;
+  }
+
   .project-slider {
       width: 100%;
       margin: 0;
@@ -1019,6 +1035,8 @@ background-color: white;
 
     .project-slider p {
     font-size: 1.2em;
+    margin-bottom: 25px;
+    padding: 0 20px;
     }
 
     .single-project-text {
@@ -1033,13 +1051,30 @@ background-color: white;
     font-size: 3em;
   }
 
+  .tech-icon-header {
+    font-size: 16px;
+}
 
+.tech-icon-row {
+    margin-bottom: 15px;
+}
 
   .imac-container {
   height: 90%;
 }
 .big-iphone-container {
-    height: 90%;   
+    height: 90%; 
+    width: 100%;  
+}
+
+.big-iphone-container.roadwarrior-v1 {
+  background: url("../img/road-warrior-v1-double.png") no-repeat center bottom;
+  background-size: contain;
+}
+
+.big-iphone-container.roadwarrior-v2 {
+  background: url("../img/road-warrior-v2-double.png") no-repeat center bottom;
+  background-size: contain;
 }
 
 .demo-wrapper {
