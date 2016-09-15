@@ -801,6 +801,38 @@ background-color: white;
     font-size: 3rem;
   }
 
+
+  .demo-wrapper {
+      position: absolute;
+      left: 0;
+      top: 280px;
+  }
+
+  .small-iphone-spacer {
+    display: none;
+  }
+
+  .large-iphone-spacer {
+    display: inherit;
+  }
+
+  .big-iphone-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto; 
+  }
+
+.big-iphone-container.roadwarrior-v1 {
+  background: url("../img/road-warrior-v1-double.png") no-repeat center bottom;
+  background-size: contain;
+}
+
+.big-iphone-container.roadwarrior-v2 {
+  background: url("../img/road-warrior-v2-double.png") no-repeat center bottom;
+  background-size: contain;
+}
+
   a.anchor {
     top: -100px;
   }
@@ -1020,6 +1052,13 @@ background-color: white;
 
 
 @media (min-width: 1024px) {
+
+  .demo-wrapper {
+      position: absolute;
+      left: 0;
+      top: 0;
+  }
+
   .small-iphone-spacer {
     display: none;
   }

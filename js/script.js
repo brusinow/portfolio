@@ -143,6 +143,11 @@ $(document).ready(function() {
         $(".project-slider").height(bodyheight-150);
         $(".demo-wrapper").height(bodyheight-150);
         $(".single-project-text").height(bodyheight-150);
+        } else if (width > 640 && width <= 1024){
+        $(".content-section").height(bodyheight-120);
+        $(".project-slider").height(bodyheight-260);
+        $(".demo-wrapper").height(bodyheight-540);
+        $(".single-project-text").height(bodyheight-250); 
         } else {
         $(".content-section").height(bodyheight-120);
         $(".project-slider").height(bodyheight-260);
