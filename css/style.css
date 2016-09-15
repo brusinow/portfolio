@@ -15,7 +15,6 @@ h2 {
   font-size: 1.3rem;
   text-align: center;
   margin-bottom: 20px;
-  text-decoration: underline;
 }
 
 h1 {
@@ -250,6 +249,7 @@ background-color: white;
 
 .section-header {
   font-family: 'Oswald', sans-serif;
+  font-weight: 700;
 }
 
 .section-header-white {
@@ -562,7 +562,8 @@ background-color: white;
 @media (min-width: 321px) {
   h2 {
   font-size: 2rem;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
+  margin-top: 20px;
   }
 
   .contact-buttons {
@@ -802,6 +803,22 @@ background-color: white;
 @media (min-width: 641px) {
   h2 {
     font-size: 3rem;
+    margin-bottom: 20px;
+  }
+
+  .slick-dots li button:before {
+    font-size: 10px;
+  }
+
+
+  .version-text {
+    margin-bottom: 2px;
+    margin-left: 10px;
+    font-size: 3.4em;
+  }
+
+  .portfolio-project-header {
+    font-size: 3.5em;
   }
 
 
@@ -1055,11 +1072,23 @@ background-color: white;
 
 
 @media (min-width: 1024px) {
+  h2 {
+    font-size: 4rem;
+    margin-top: 0;
+  }
+
+  .slick-prev {
+    left: -37px;
+  }
+
+  .slogan {
+    font-size: 1.5em;
+}
 
   .demo-wrapper {
-      position: absolute;
-      left: 0;
-      top: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
   }
 
   .small-iphone-spacer {
@@ -1071,15 +1100,15 @@ background-color: white;
   }
 
   .project-slider {
-      width: 100%;
-      margin: 0;
+    width: 100%;
+    margin: 0;
   }
 
-    .project-slider p {
+  .project-slider p {
     font-size: 1.2em;
     margin-bottom: 25px;
     padding: 0 20px;
-    }
+  }
 
     .single-project-text {
     padding-top: 50px;

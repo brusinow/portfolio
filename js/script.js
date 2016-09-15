@@ -42,7 +42,7 @@ $(document).ready(function() {
         $(".single-project-text").height(bodyheight-250); 
         } else {
         $(".content-section").height(bodyheight-120);
-        $(".project-slider").height(bodyheight-260);
+        $(".project-slider").height(bodyheight-280);
         $(".demo-wrapper").height(bodyheight-260);
         $(".single-project-text").height(bodyheight-250);
       }
