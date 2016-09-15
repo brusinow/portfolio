@@ -24,6 +24,16 @@ h1 {
   margin-bottom: 0px;
 }
 
+#before-dom-loaded {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  z-index: 9999;
+}
+
 .welcome-text {
   width: 100%;
   height: 100%;
@@ -354,7 +364,7 @@ background-color: white;
 #projects-section {
   /*background-color: #0E3F6B;*/
   /*background-color: #3e6588;*/
-  background-color: #e8c1c1;
+  background-color: #bcd8ec;
 }
 
 .projects-header {
@@ -632,13 +642,6 @@ background-color: white;
   margin-bottom:30px;
 }
 
-
-
-  #projects-section {
-  /*background-color: #0E3F6B;*/
-  /*background-color: #3e6588;*/
-  background-color: #e8c1c1;
-}
 
 .projects-header {
   margin-top: 0px;
