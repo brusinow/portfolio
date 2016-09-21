@@ -62,7 +62,7 @@ $(document).ready(function(){
 
 $(document).ready(function() {
   $(".menu").delay(300).fadeIn(800); 
-  $("#namebox").delay(600).fadeIn(1500);
+  $(".namebox").delay(600).fadeIn(1500);
   $("#phrase-1").delay(2200).fadeIn(1000);
   $("#phrase-2").delay(3700).fadeIn(1000);
 });
